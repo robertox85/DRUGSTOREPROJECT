@@ -53,8 +53,8 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Email", name: "email", widget: "string"}
       - {label: "Telefono", name: "telefono", widget: "string"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Email", name: "email", widget: "string"}
-      - {label: "Telefono", name: "telefono", widget: "string"}
+      - {label: "Title", name: "title2", widget: "string"}
+      - {label: "Featured Image", name: "thumbnail2", widget: "image"}
+      - {label: "Body", name: "body2", widget: "markdown"}
+      - {label: "Email", name: "email2", widget: "string"}
+      - {label: "Telefono", name: "telefono2", widget: "string"}
