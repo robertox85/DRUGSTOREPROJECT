@@ -3,3 +3,15 @@
 backend:
   name: git-gateway
   branch: master
+media_folder: "/assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: 'partners'
+    label: 'Partner'
+    create: true
+    folder: '_partners/'
+    fields:
+      # - {label: "Layout", name: "layout", widget: "hidden", default: "partners"}
+      - {label: "Nome", name: "name", widget: "string", required: true}
+      - {label: "Logo", name: "image_url", widget: "image", required: true}
