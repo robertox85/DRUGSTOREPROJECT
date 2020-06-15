@@ -1,0 +1,99 @@
+# config.yml
+
+backend:
+  name: git-gateway
+  branch: master
+media_folder: "/assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: 'partners'
+    label: 'Partner'
+    create: true
+    folder: '_partners/'
+    fields:
+      # - {label: "Layout", name: "layout", widget: "hidden", default: "partners"}
+      - {label: "Nome", name: "name", widget: "string", required: true}
+      - {label: "Logo", name: "image_url", widget: "image", required: true}
+
+  - label: "Pagine"
+    name: "pages"
+    files:
+      - label: "Conferma invio modulo"
+        name: "success"
+        file: success.md
+        fields:
+          - {label: "Titolo", name: "title", widget: "string", required: true}
+          - {label: "Body", name: "body", widget: "markdown", required: true}
+
+      - label: "Trattamento dei dati personali"
+        name: "privacy"
+        file: privacy.md
+        fields:
+          - {label: "Titolo", name: "title", widget: "string", required: true}
+          - {label: "Body", name: "body", widget: "markdown", required: true}
+  # - name: "config"
+  #   label: "Config"
+  #   editor:
+  #     preview: false
+  #   files:
+  #     - label: "Navigation"
+  #       name: "navigation"
+  #       file: "_data/navigation.yml"
+  #       fields:
+  #         - label: "Navigation Items"
+  #           name: "items"
+  #           widget: "list"
+  #           fields:
+  #             - {label: Name, name: name, widget: string}
+  #             - {label: Link, name: link, widget: string}
+  #             - label: "subnav"
+  #               name: "subnav"
+  #               widget: "list"
+  #               fields:
+  #                   - {label: Name, name: name, widget: string}
+  #                   - {label: Link, name: link, widget: string}
+  #                   - label: "subnav"
+  #                     name: "subnav"
+  #                     widget: "list"
+  #                     fields:
+  #                         - {label: Name, name: name, widget: string}
+  #                         - {label: Link, name: link, widget: string}
+  - name: "settings"
+    label: "Impostazioni sito"
+    editor:
+      preview: false
+    files:
+        - label: "Impostazioni"
+          name: "impostazioni"
+          file: "_data/impostazioni.yml"
+          fields:
+            - label: "Impostazioni"
+              name: "settings"
+              widget: "object"
+              fields:
+                - {label: Background menu, name: background, widget: string,required: false}
+                - {label: Colore testo menu, name: colore, widget: string,required: false}
+                - {label: Titolo, name: titolo, widget: string,required: false}
+                - {label: Facebook, name: facebook, widget: string,required: false}
+                - {label: Instagram, name: instagram, widget: string,required: false}
+                - {label: Logo header sx, name: logo_header_sx, widget: image,required: false}
+                - {label: Logo Grande, name: logo_grande, widget: image,required: false}
+                # - {label: Titolo Principale, name: main_titolo, widget: text,required: false}
+                - {label: Testo Principale, name: main_testo, widget: markdown,required: false}
+                - {label: Clienti, name: clienti, widget: string,required: false}
+
+            - label: "Form"
+              name: "form"
+              widget: "object"
+              fields:
+                - {label: Testo prima del form, name: preform, widget: markdown,required: false}
+                - {label: Titolo, name: titolo, widget: string,required: false}
+                - {label: Nome, name: nome, widget: string,required: false}
+                - {label: Cognome, name: cognome, widget: string,required: false}
+                - {label: Email, name: email, widget: string,required: false}
+                - {label: Telefono, name: telefono, widget: string,required: false}
+                - {label: Regione di appartenenza, name: regione, widget: string,required: false}
+                - {label: Messaggio, name: messaggio, widget: string,required: false}
+                - {label: Termini e condizioni (link alla pagina), name: termini, widget: string,required: false}
+                - {label: Invia, name: invia, widget: string,required: false}
