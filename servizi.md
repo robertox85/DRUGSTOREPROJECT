@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: servizi
 title: "Servizi"
 
 ---

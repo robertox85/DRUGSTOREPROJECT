@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: chisiamo
 title: "Chi siamo"
 email: ""
 telefono: ""

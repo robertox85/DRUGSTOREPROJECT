@@ -1,0 +1,48 @@
+[
+    {
+        "etichetta": "START UP ANALISI",
+        "titolo" : "Analisi, Ideazione & Progettazione",
+        "contenuto": "Per sviluppare un progetto di successo e di tendenza è necessaria un’analisi iniziale<br> del territorio, uno studio delle criticità della struttura e un’analisi di mercato<br> proiettata sulla potenziale clientela su cui si vuole costruire il proprio target.<br><br>Ci serviamo di dati estrapolati da piattaforme istituzionali per sviluppare assieme al<br> cliente il format più redditizio basato sulle nostre analisi di mercato.<br>Forniamo quindi una proiezione economica sulle reali possibilità di crescita del<br> format ristorativo.",
+        "lista": ["Analisi, Ideazione & Progettazione", "Analisi"],
+        "hero_1":[
+            {
+                "titolo": "ti",
+                "decrizione":"de"
+            },
+            {
+                "titolo": "34",
+                "decrizione":"43"
+            }
+        ],
+        "hero_2":[
+            {
+                "titolo":"",
+                "descrizione":""
+            }
+        ]
+    },
+    
+    {
+        "etichetta": "START UP ANALISI",
+        "titolo" : "Analisi, Ideazione & Progettazione",
+        "contenuto": "Per sviluppare un progetto di successo e di tendenza è necessaria un’analisi iniziale<br> del territorio, uno studio delle criticità della struttura e un’analisi di mercato<br> proiettata sulla potenziale clientela su cui si vuole costruire il proprio target.<br><br>Ci serviamo di dati estrapolati da piattaforme istituzionali per sviluppare assieme al<br> cliente il format più redditizio basato sulle nostre analisi di mercato.<br>Forniamo quindi una proiezione economica sulle reali possibilità di crescita del<br> format ristorativo.",
+        "lista": ["Analisi, Ideazione & Progettazione", "Analisi"],
+        "hero_1":[
+            {
+                "titolo": "ti",
+                "decrizione":"de"
+            },
+            {
+                "titolo": "34",
+                "decrizione":"43"
+            }
+        ],
+        "hero_2":[
+            {
+                "titolo":"",
+                "descrizione":""
+            }
+        ]
+    }
+    
+]
