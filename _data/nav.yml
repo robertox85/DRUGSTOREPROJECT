@@ -1,9 +1,9 @@
 nav:
   - title: Azienda
     url: azienda.html
-    subnav:
-      - title: Chi siamo
-        url: chisiamo.html
+  
+  - title: Chi siamo
+    url: chisiamo.html  
   
   - title: Servizi
     url: servizi.html
