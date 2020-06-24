@@ -1,0 +1,21 @@
+nav:
+  - title: Azienda
+    url: azienda.html
+    subnav:
+      - title: Chi siamo
+        url: chisiamo.html
+  
+  - title: Servizi
+    url: servizi.html
+
+  - title: Case History
+    url: casehistory.html
+  
+  - title: Careers
+    url: careers.html
+  
+  - title: Press
+    url: press.html
+  
+  - title: Partners
+    url: partners.html

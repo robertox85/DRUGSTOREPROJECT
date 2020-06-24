@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+
+             <ul class="navbar-nav mx-auto mt-2 mt-lg-0 nav-menu">
+                
+                {% for item in site.data.nav.nav %}
+                  
+                  {% if item.subnav %}
+                    {% assign class = 'dropdown' %}
+                  {% endif %}
+                  
+                  <li class="nav-item {{class}}">
+                        {% if item.subnav %}
+                            
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ item.title }}</a>
+                                <div class="dropdown-menu">
+                                {% for item in item.subnav %}
+                                    <a class="dropdown-item" href="{{ item.url }}">{{ item.title }}</a>
+                                {% endfor %}
+                            </div>
+                            
+                        {% else %}
+                            <a class="nav-link" href="{{ item.url }}">{{ item.title }}</a>    
+                        {% endif %}
+                  </li>
+              
+                {% endfor %}
+            </ul>
+
+            <ul class="nav text-lg-center nav-social">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+
+                        <i class="fab fa-instagram"></i>
+
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>

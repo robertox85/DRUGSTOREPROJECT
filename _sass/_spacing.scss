@@ -1,0 +1,9 @@
+@include generate(m-left,  margin-left);
+@include generate(m-right, margin-right);
+@include generate(m-top,  margin-top);
+@include generate(m-bottom, margin-bottom);
+
+@include generate(p-left,  padding-left);
+@include generate(p-right,  padding-right);
+@include generate(p-top,  padding-top);
+@include generate(p-bottom,  padding-bottom);

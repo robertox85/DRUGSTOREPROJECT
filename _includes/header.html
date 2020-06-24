@@ -1,0 +1,17 @@
+{% include navigazione.html %}
+
+<!-- mi servirà per l'active class -->
+{% assign current = page.url | downcase | split: '/' %}
+
+<!-- featured -->
+{% if page.header_img  %}
+<div id="carouselId" class="carousel featured" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active" style="background-image:url({{page.header_img}});">
+
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<body class="{{page.url | replace: ".html", "" | split: '/'  }}">

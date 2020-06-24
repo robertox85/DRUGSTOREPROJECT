@@ -1,0 +1,69 @@
+$standard_white: #ffffff;
+$standard_ultralight: #e4e4e4;
+$standard_superlight: #fcfcfc;
+$standard: #f0f0f0;
+$standard_dark: #fafafa;
+// $standard_black: #00090F;
+
+// $primary_ultralight: #EBF7FF;
+// $primary_superlight: #CCEAFF;
+$primary_lighter: #D8D8D8;
+$primary_light: #8c8c8c;
+$primary: #333333;
+$primary_dark: #1c1c1c;
+// $primary_darker: #005B99;
+// $primary_superdark:#003D66;
+$primary_black: #000000;
+
+// $secondary_ultralight: #E6FFFC;
+// $secondary_superlight: #CCFFFA;
+$secondary_lighter: #b2b2b2;
+$secondary_light: #c7bda4;
+$secondary: #ccc5b0;
+$secondary_dark: #969696;
+$secondary_darker: #1d1d1d;
+$secondary_superdark: #1f1f1f;
+$secondary_black: #001e33;
+
+$colors: (
+  standard_white: $standard_white,
+  standard_ultralight: $standard_ultralight,
+  standard_superlight: $standard_superlight,
+  standard: $standard,
+  standard_dark: $standard_dark,
+  // $standard_black: #00090F;
+    // $primary_ultralight: #EBF7FF;
+    // $primary_superlight: #CCEAFF;
+  primary_lighter: $primary_lighter,
+  primary_light: $primary_light,
+  primary: $primary,
+  primary_dark: $primary_dark,
+  // $primary_darker: #005B99;
+    // $primary_superdark:#003D66;
+    primary_black: $primary_black,
+  // $secondary_ultralight: #E6FFFC;
+    // $secondary_superlight: #CCFFFA;
+    secondary_lighter: $secondary_lighter,
+  secondary_light: $secondary_light,
+  secondary: $secondary,
+  secondary_dark: $secondary_dark,
+  secondary_darker: $secondary_darker,
+  // $secondary_superdark:#003D66;
+    // $secondary_black : #001E33;,
+);
+
+.color {
+  @include color-modifiers($prefix: '__');
+}
+
+.bg {
+  @include color-modifiers($attribute: 'background-color', $prefix: '__');
+}
+
+.bg__gradient-primary {
+  background-image: linear-gradient(143deg, #3f3f3f 0%, #000000 100%);
+}
+.bg__gradient-dark{
+    background-image: linear-gradient(180deg, #000000 0%, #4E4E4E 100%);
+}
+

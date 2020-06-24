@@ -1,0 +1,71 @@
+.navbar {
+  .navbar-brand {
+    width: 200px;
+    height: 43px;
+    background-image: url('images/DRUGSTORE_PROJECT_NERA.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .nav-menu {
+    .nav-item {
+      &:not(:last-child) {
+        margin-right: rem(86px);
+      }
+    }
+  }
+  .nav-menu,
+  .nav-social {
+    .nav-item {
+      .nav-link {
+        text-transform: uppercase;
+        font-size: rem(14px);
+        letter-spacing: rem(0.88px);
+        @media screen and (max-width:1200px) {
+          &:first-of-type{
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+  i {
+    color: #b2b2b2;
+  }
+  &.navbar-light {
+  }
+  &.bg-light {
+  }
+  &.bg-dark {
+    background-color: #000000 !important;
+  }
+  &.navbar-dark {
+    .navbar-brand {
+      background-image: url('images/DRUGSTORE_PROJECT_BIANCA.png');
+    }
+    .nav-item {
+      .nav-link {
+        color: #ddd;
+      }
+    }
+  }
+
+  .dropdown-menu{
+    background: #000000;
+    border: 1px solid #202020;
+    border-radius: 0;
+    .dropdown-item{
+      
+      font-stretch: normal;
+      font-size: 13px;
+      color: #F5F5F5;
+      letter-spacing: -0.31px;
+      text-transform: uppercase;
+      &:not(:last-child){
+        border-bottom: 1px solid #333333;
+      }
+      &:hover{
+        background: rgba($color: #fff, $alpha: .3);
+      }
+    }
+  }
+}

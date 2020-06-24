@@ -1,0 +1,38 @@
+// colori
+@mixin color-modifiers($attribute: 'color', $prefix: '-') {
+  @each $name, $hex in $colors {
+    &#{$prefix}#{$name} {
+      #{$attribute}: $hex;
+    }
+  }
+}
+
+// px to rem
+@function rem($size) {
+  @return $size / 16px * 1rem;
+}
+
+@mixin generate($prefix, $property) {
+  // List of sizes to generate for each
+  $sizes: [
+      1.5625, // 25px
+      3.125,  // 50px
+      4.6875, // 75px
+      6.25,   // 100px
+      7.8125, // 125px
+      10.938 // 175px
+    ];
+  // Spacing to multiply the sizes by
+  $spacing: 1rem;
+
+  // Loop through all of the sizes(we use @for rather than @each, as we want access to the index)
+  @for $i from 1 through length($sizes) {
+    // Get the size for the current index
+    $size: nth($sizes, $i);
+
+    // Create the rule
+    .#{$prefix}-#{$i - 1} {
+      #{$property}: $spacing * $size;
+    }
+  }
+}

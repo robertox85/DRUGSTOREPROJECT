@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: default
 title: "Chi siamo"
 email: ""
 telefono: ""
