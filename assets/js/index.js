@@ -46,9 +46,9 @@ function contentAnimation() {
   var tl = gsap.timeline();
   var tl2 = gsap.timeline();
   var tl3 = gsap.timeline();
-  tl.from(".guido img, .guido h1,.guido h2,.guido h3,.guido h4,.guido p", { duration: 1.2, translateX: 50, opacity: 0 , stagger: 0.2 });
+  tl.from(".guido img, .guido h1,.guido h2,.guido h3,.guido h4,.guido p", {  duration: 1.2, translateX: 50, opacity: 0, stagger: 0.2 });
   tl2.from(".mirko img, .mirko h1,.mirko h2,.mirko h3,.mirko h4,.mirko p", { duration: 1.2, translateX: 50, opacity: 0, stagger: 0.2 });
-  tl3.from(".azienda h1,.azienda h2,.azienda h3,.azienda h4,.azienda p", { duration: 1.2, translateX: 50, opacity: 0, stagger: 0.2 });
+  // tl3.from(".azienda h1,.azienda h2,.azienda h3,.azienda h4,.azienda p", {   duration: 1.2, translateX: 50, opacity: 0, stagger: 0.2 });
   
 }
 
@@ -56,9 +56,9 @@ function leaveAnimation() {
   var tl = gsap.timeline();
   var tl2 = gsap.timeline();
   var tl3 = gsap.timeline();
-  tl.from(".guido img, .guido h1,.guido h2,.guido h3,.guido h4,.guido p", { duration: 1.2, translateX: -50, opacity: 0,stagger: 0.1, delay:0.1 });
-  tl2.from(".mirko img, .mirko h1,.mirko h2,.mirko h3,.mirko h4,.mirko p", { duration: 1.2, translateX: -50, opacity: 0,stagger: 0.1, delay:0.1 });
-  tl3.from(".azienda h1,.azienda h2,.azienda h3,.azienda h4,.azienda p", { duration: 1.2, translateX: -50, opacity: 0,stagger: 0.1, delay:0.1 });
+  tl.from(".guido img, .guido h1,.guido h2,.guido h3,.guido h4,.guido p", {  duration: 1.2, translateX: -50, opacity: 0, stagger: 0.1 });
+  tl2.from(".mirko img, .mirko h1,.mirko h2,.mirko h3,.mirko h4,.mirko p", { duration: 1.2, translateX: -50, opacity: 0, stagger: 0.1 });
+  // tl3.from(".azienda h1,.azienda h2,.azienda h3,.azienda h4,.azienda p", {   duration: 1.2, translateX: -50, opacity: 0, stagger: 0.1 });
   
 }
 
@@ -126,6 +126,7 @@ barba.init({
       async leave(data) {
         const done = this.async();
 
+        // leaveAnimation();
         pageTransition();
         await delay(1200);
         done();

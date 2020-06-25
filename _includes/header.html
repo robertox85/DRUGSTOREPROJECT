@@ -1,7 +1,7 @@
 <!-- mi servirà per l'active class -->
 {% assign current = page.url | downcase | split: '/' %}
 
-<body data-barba="wrapper" class="{{page.url | replace: ".html", "" | split: '/'  }}">
+<body data-barba="wrapper">
 
     <ul class="transition">
         <li></li>
@@ -14,7 +14,7 @@
     {% include navigazione.html %}
 
     <div class="wrapper">
-        <main data-barba="container" data-barba-namespace="{{page.url | replace: ".html", "" | split: '/'  }}">
+        <main data-barba="container" data-barba-namespace="{{page.url | replace: ".html", "" | split: '/'  }}" class="{{page.url | replace: ".html", "" | split: '/'  }}">
 
             <section class="viewport">
 

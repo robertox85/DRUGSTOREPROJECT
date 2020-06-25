@@ -7,6 +7,52 @@
   }
 }
 
+main.servizi{
+  .featured .carousel-item{
+    background-size: inherit;
+    min-height: 134px;
+    margin-top: 110px;
+    margin-bottom: 80px;
+  }
+  .nav-servizi li a{
+    background-color: rgba($color: #D8D8D8, $alpha: .43);
+    color: $primary;
+    text-transform: uppercase;
+    padding: 14px 69px;
+
+  }
+  .nav-servizi li a.active{
+    background: $secondary;
+    color: $standard_white;
+  }
+  .dettaglio-servizi li{
+    position: relative;
+    &::before{
+      content: '';
+      width: 23px;
+      height: 23px;
+      border-radius: 100px;
+      background-color: $secondary;
+      display: inline-block;
+      position: absolute;
+      left: -30px;
+      top: 9px;
+    }
+  }
+
+  @media screen and (min-width:1200px){
+    .col-lg-6.bg__primary{
+      position: absolute;
+      right: 0;
+      transform: translateY(50%);
+      max-width: 55%;
+    }
+  }
+  
+  
+}
+
+
 ul.transition {
   display: flex;
   position: fixed;

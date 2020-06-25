@@ -6,14 +6,87 @@
 
 {%- include header.html -%}
 
-<div class="container-fluid heading p-top-4 p-bottom-0">
+<div class="container-fluid heading ">
     <div class="container">
         <div class="row">
-            
-            {% for servizio in site.data.servizi %}
-               
-            {% endfor %}
 
+            <div class="col-12">
+
+                <ul class="pl-0 mb-0 d-lg-flex flex-lg-wrap list-unstyled nav-servizi">
+
+                    {% for servizio in site.data.servizi %}
+                    <li class="nav-item">
+                        <a class="link nav-link" href="#">{{servizio.etichetta}}</a>
+                    </li>
+                    {% endfor %}
+
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="row p-top-4">
+            <h1 class="col-12 m-bottom-2">Analisi, Ideazione & Progettazione</h1>
+            <div class="col-6">
+                <p>
+                    Per sviluppare un progetto di successo e di tendenza è necessaria un’analisi iniziale<br> del
+                    territorio, uno studio delle criticità della struttura e un’analisi di mercato<br> proiettata sulla
+                    potenziale clientela su cui si vuole costruire il proprio target.<br><br>
+
+                    Ci serviamo di dati estrapolati da piattaforme istituzionali per sviluppare assieme al<br> cliente
+                    il format più redditizio basato sulle nostre analisi di mercato.<br>
+                    Forniamo quindi una proiezione economica sulle reali possibilità di crescita del format ristorativo.
+                </p>
+            </div>
+
+            <div class="col-6">
+                <ul class="list-unstyled dettaglio-servizi">
+
+                    <li><h3 class="color__primary">Geomarketing ed analisi di mercato</h3></li>
+                    <li><h3 class="color__primary">Analisi e proiezione di fattibilitá economica</h3></li>
+                    <li><h3 class="color__primary">Setup dei budget e target economici</h3></li>
+                    <li><h3 class="color__primary">Ideazione e sviluppo del concept</h3></li>
+                    <li><h3 class="color__primary">Strategia di investimenti concordata con il cliente</h3></li>
+                    <li><h3 class="color__primary">Ideazione dell’offerta Food & Beverage</h3></li>
+                    <li><h3 class="color__primary">Autorizzazioni (SCIA, HACCP, Sicurezza)</h3></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row m-top-4">
+        <div class="col-lg-6 bg__secondary">
+            <div class="p-top-1 p-bottom-3 p-left-4 p-right-4">
+                <h1>THINK<br> BIGGER!</h1>
+                <h3 class="m-top-0 color__standard_white">SPAZIO RETAIL</h3>
+                <p class="m-bottom-0">Che si tratti di un progetto già in essere o di uno nuovo da sviluppare,
+                    elaboriamo il business plan mirando principalmente alla replicabilità del format e di conseguenza
+                    alla sua espansione.</p>
+
+                <h3 class="m-top-0 color__standard_white">SPAZIO RETAIL</h3>
+                <p class="m-bottom-0">Che si tratti di un progetto già in essere o di uno nuovo da sviluppare,
+                    elaboriamo il business plan mirando principalmente alla replicabilità del format e di conseguenza
+                    alla sua espansione.</p>
+
+                <h3 class="m-top-0 color__standard_white">SPAZIO RETAIL</h3>
+                <p class="m-bottom-0">Che si tratti di un progetto già in essere o di uno nuovo da sviluppare,
+                    elaboriamo il business plan mirando principalmente alla replicabilità del format e di conseguenza
+                    alla sua espansione.</p>
+
+
+            </div>
+        </div>
+        <div class="col-lg-6 bg__primary">
+            <div class="p-top-1 p-bottom-3 p-left-4 p-right-4">
+                <h2 class="color__standard_white">Compravendita, risanamento<br>
+                    e Contabilità</h2>
+                <p class="color__standard_white">
+                    Tramite la nostra rete di agenti immobiliari e legali possiamo agevolare il cliente nel processo di
+                    acquisto o vendita di aziende già esistenti ed operanti. Inoltre grazie agli economisti di impresa
+                    nostri partners, possiamo curare la contabilità dell’attività in ogni minimo dettaglio ed attuare
+                    strategie finanziarie mirate al
+                    risanamento economico dell’azienda.</p>
+            </div>
 
         </div>
     </div>
