@@ -1,137 +1,78 @@
 [
     {
-        "etichetta": "START UP ANALISI",
-        "titolo" : "Analisi, Ideazione & Progettazione",
-        "contenuto": "Per sviluppare un progetto di successo e di tendenza è necessaria un’analisi iniziale<br> del territorio, uno studio delle criticità della struttura e un’analisi di mercato<br> proiettata sulla potenziale clientela su cui si vuole costruire il proprio target.<br><br>Ci serviamo di dati estrapolati da piattaforme istituzionali per sviluppare assieme al<br> cliente il format più redditizio basato sulle nostre analisi di mercato.<br>Forniamo quindi una proiezione economica sulle reali possibilità di crescita del<br> format ristorativo.",
-        "lista": ["Analisi, Ideazione & Progettazione", "Analisi"],
-        "hero_1":[
-            {
-                "titolo": "ti",
-                "decrizione":"de"
-            },
-            {
-                "titolo": "34",
-                "decrizione":"43"
-            }
-        ],
-        "hero_2":[
-            {
-                "titolo":"",
-                "descrizione":""
-            }
-        ]
-    },
-    
-    {
-        "etichetta": "OFFERTA",
-        "titolo" : "Analisi, Ideazione & Progettazione",
-        "contenuto": "Per sviluppare un progetto di successo e di tendenza è necessaria un’analisi iniziale<br> del territorio, uno studio delle criticità della struttura e un’analisi di mercato<br> proiettata sulla potenziale clientela su cui si vuole costruire il proprio target.<br><br>Ci serviamo di dati estrapolati da piattaforme istituzionali per sviluppare assieme al<br> cliente il format più redditizio basato sulle nostre analisi di mercato.<br>Forniamo quindi una proiezione economica sulle reali possibilità di crescita del<br> format ristorativo.",
-        "lista": ["Analisi, Ideazione & Progettazione", "Analisi"],
-        "hero_1":[
-            {
-                "titolo": "ti",
-                "decrizione":"de"
-            },
-            {
-                "titolo": "34",
-                "decrizione":"43"
-            }
-        ],
-        "hero_2":[
-            {
-                "titolo":"",
-                "descrizione":""
-            }
-        ]
-    },
-
-    {
-        "etichetta": "FORMAZIONE",
-        "titolo" : "Analisi, Ideazione & Progettazione",
-        "contenuto": "Per sviluppare un progetto di successo e di tendenza è necessaria un’analisi iniziale<br> del territorio, uno studio delle criticità della struttura e un’analisi di mercato<br> proiettata sulla potenziale clientela su cui si vuole costruire il proprio target.<br><br>Ci serviamo di dati estrapolati da piattaforme istituzionali per sviluppare assieme al<br> cliente il format più redditizio basato sulle nostre analisi di mercato.<br>Forniamo quindi una proiezione economica sulle reali possibilità di crescita del<br> format ristorativo.",
-        "lista": ["Analisi, Ideazione & Progettazione", "Analisi"],
-        "hero_1":[
-            {
-                "titolo": "ti",
-                "decrizione":"de"
-            },
-            {
-                "titolo": "34",
-                "decrizione":"43"
-            }
-        ],
-        "hero_2":[
-            {
-                "titolo":"",
-                "descrizione":""
-            }
+        "etichetta": "ANALISI",
+        "titolo": "Analisi",
+        "contenuto": "Per sviluppare un progetto di successo e di tendenza è necessaria un’analisi iniziale del territorio, uno studio delle criticità della struttura<br> e un’indagine di mercato proiettata sulla potenziale clientela e l’identificazione del proprio target.<br> Ci serviamo di dati estrapolati da piattaforme <br>istituzionali per sviluppare assieme al cliente il format più redditizio basato sulle nostre analisi di mercato.<br> Forniamo quindi una proiezione economica sulle reali possibilità di crescita del format ristorativo.",
+        "items": [
+            "Geomarketing ed analisi di mercato",
+            "Analisi e proiezione di fattibilità economica",
+            "Setup dei budget e target economici",
+            "Ideazione e sviluppo del concept",
+            "Strategia di investimenti concordata con il cliente",
+            "Ideazione dell’offerta Food & Beverage",
+            "Autorizzazioni amministrative e sanitarie (SCIA, HACCP, Sicurezza)"
         ]
     },
     {
-        "etichetta": "INTERIOR DESIGN",
-        "titolo" : "Analisi, Ideazione & Progettazione",
-        "contenuto": "Per sviluppare un progetto di successo e di tendenza è necessaria un’analisi iniziale<br> del territorio, uno studio delle criticità della struttura e un’analisi di mercato<br> proiettata sulla potenziale clientela su cui si vuole costruire il proprio target.<br><br>Ci serviamo di dati estrapolati da piattaforme istituzionali per sviluppare assieme al<br> cliente il format più redditizio basato sulle nostre analisi di mercato.<br>Forniamo quindi una proiezione economica sulle reali possibilità di crescita del<br> format ristorativo.",
-        "lista": ["Analisi, Ideazione & Progettazione", "Analisi"],
-        "hero_1":[
-            {
-                "titolo": "ti",
-                "decrizione":"de"
-            },
-            {
-                "titolo": "34",
-                "decrizione":"43"
-            }
-        ],
-        "hero_2":[
-            {
-                "titolo":"",
-                "descrizione":""
-            }
+        "etichetta": "MENU ENGENEERING",
+        "titolo": "MENU ENGENEERING",
+        "contenuto": "Concordata la strategia con il cliente, sviluppiamo i menù strutturati secondo<br> un rigido studio dei costi, realizziamo un’analisi dei profitti e settiamo gli<br> standard di in/out di magazzino, ponendo un’attenzione particolare al riciclo delle materie prime<br> utile ad abbattere gli sprechi.",
+        "items": [
+            "Menù engineering",
+            "Pianificazione delle aree di lavoro",
+            "Ricerca dei fornitori",
+            "Sviluppo analisi profitti e costi F&B",
+            "Ricettario & schede tecniche",
+            "Gestione magazzino ed inventario"
         ]
     },
     {
-        "etichetta": "MARKETING & BRANDING",
-        "titolo" : "Analisi, Ideazione & Progettazione",
-        "contenuto": "Per sviluppare un progetto di successo e di tendenza è necessaria un’analisi iniziale<br> del territorio, uno studio delle criticità della struttura e un’analisi di mercato<br> proiettata sulla potenziale clientela su cui si vuole costruire il proprio target.<br><br>Ci serviamo di dati estrapolati da piattaforme istituzionali per sviluppare assieme al<br> cliente il format più redditizio basato sulle nostre analisi di mercato.<br>Forniamo quindi una proiezione economica sulle reali possibilità di crescita del<br> format ristorativo.",
-        "lista": ["Analisi, Ideazione & Progettazione", "Analisi"],
-        "hero_1":[
-            {
-                "titolo": "ti",
-                "decrizione":"de"
-            },
-            {
-                "titolo": "34",
-                "decrizione":"43"
-            }
-        ],
-        "hero_2":[
-            {
-                "titolo":"",
-                "descrizione":""
-            }
+        "etichetta": "FORMAZIONE & GESTIONE",
+        "titolo": "FORMAZIONE & GESTIONE",
+        "contenuto": "Ci occupiamo della selezione del personale, della loro formazione e di strutturare procedure di servizio fluide e funzionali. Forniamo inoltre al cliente tutti gli strumenti fondamentali per la gestione in piena autonomia dell’attività.",
+        "items": [
+            "Impostazione delle procedure di servizio",
+            "Definizione del regolamento e della politica aziendale",
+            "Selezione e formazione del personale su modalità di servizio, prodotto e linee guida del brand",
+            "Manualistica per il controllo aziendale economico e delle risorse umane",
+            "Impostazione del sistema di vendita e gestionale POS",
+            "Testing pre-apertura con affiancamento al personale"
         ]
     },
     {
-        "etichetta": "COMPRAVENDITA",
-        "titolo" : "Analisi, Ideazione & Progettazione",
-        "contenuto": "Per sviluppare un progetto di successo e di tendenza è necessaria un’analisi iniziale<br> del territorio, uno studio delle criticità della struttura e un’analisi di mercato<br> proiettata sulla potenziale clientela su cui si vuole costruire il proprio target.<br><br>Ci serviamo di dati estrapolati da piattaforme istituzionali per sviluppare assieme al<br> cliente il format più redditizio basato sulle nostre analisi di mercato.<br>Forniamo quindi una proiezione economica sulle reali possibilità di crescita del<br> format ristorativo.",
-        "lista": ["Analisi, Ideazione & Progettazione", "Analisi"],
-        "hero_1":[
-            {
-                "titolo": "ti",
-                "decrizione":"de"
-            },
-            {
-                "titolo": "34",
-                "decrizione":"43"
-            }
-        ],
-        "hero_2":[
-            {
-                "titolo":"",
-                "descrizione":""
-            }
+        "etichetta": "ARCHITETTURA & INTERIOR DESIGN",
+        "titolo": "ARCHITETTURA & INTERIOR DESIGN",
+        "contenuto": "In linea con il concept ideato, i nostri esperti collaboratori elaborano la progettualità degli spazi interni ed esterni valorizzando contemporaneamente la comunicazione visual e la funzionalità. Inoltre forniscono assistenza nella fase di progettazione ed in quella di realizzazione.",
+        "items": [
+            "Analisi dello stato di fatto",
+            "Ideazione e sviluppo del concept architettonico",
+            "Progettazione delle aree di lavoro",
+            "Renderizzazione di ambienti",
+            "Assistenza artistica sui lavori",
+            "Design Management"
+        ]
+    },
+    {
+        "etichetta": "BRAND IDENTITY",
+        "titolo": "BRAND IDENTITY",
+        "contenuto": "Coerentemente con il format delineato, il reparto di graphic e web design sviluppa e realizza l’identità grafica del brand rendendola riconoscibile ed originale. Successivamente la declina sugli elementi grafici e la coordina sui vari canali di comunicazione.",
+        "items": [
+            "Naming & Identity Logo",
+            "Materiale grafico coordinato",
+            "Menù Design",
+            "Sviluppo Web"
+        ]
+    },
+    {
+        "etichetta": "Marketing & Comunicazione",
+        "titolo": "Marketing & Comunicazione",
+        "contenuto": "Nel mercato attuale risulta ormai fondamentale per il successo di qualsiasi progetto ristorativo comunicare e promuovere l’identità del brand in modo coerente ed accattivante. A seconda delle esigenze di ogni singolo cliente, elaboriamo una strategia di comunicazione volta alla promozione del marchio attraverso il lavoro di ufficio stampa, con un coinvolgimento attivo delle testate giornalistiche, dei magazine e dei fotografi più quotati del settore. L’attività viene supportata dalla gestione dei social network e dall’ideazione e realizzazione di eventi, a partire dall’inaugurazione e lancio dell’attività.",
+        "items": [
+            "Strategia di comunicazione",
+            "Ufficio stampa & Pubbliche Relazioni",
+            "Gestione dei social media",
+            "Servizi fotografici",
+            "Produzione e coordinamento eventi"
         ]
     }
-    
 ]

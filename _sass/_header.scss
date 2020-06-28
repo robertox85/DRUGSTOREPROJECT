@@ -1,3 +1,7 @@
+body{
+  overflow-x: hidden;
+}
+
 .featured {
   .carousel-item {
     min-height: 600px;
@@ -18,7 +22,7 @@ main.servizi{
     background-color: rgba($color: #D8D8D8, $alpha: .43);
     color: $primary;
     text-transform: uppercase;
-    padding: 14px 69px;
+    padding: 14px 50px;
 
   }
   .nav-servizi li a.active{
