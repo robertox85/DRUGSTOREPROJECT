@@ -62,18 +62,6 @@ function renderText(data) {
 }
 
 function contentAnimation() {
-  
-  var tl = gsap.timeline();
-
-  tl.from("img, h1,h2,h3,h4,p, a:not(.nav-link):not(.navbar-brand)", {
-    duration: 1,
-    translateY: 50,
-    opacity: 0,
-  });
- 
-  
-  
-  
   var tl4 = gsap.timeline();
   tl4
     .to(".text__first-bg", 0.5, {
@@ -83,7 +71,6 @@ function contentAnimation() {
     })
     .to(".text__word", { opacity: 1, ease: Power2.easeInOut }, "-=0.1")
     .to(".text__first-bg", { scaleX: 0, ease: Power2.easeInOut });
-
 
   var tl5 = gsap.timeline();
   tl5
@@ -105,38 +92,46 @@ function contentAnimation() {
       "-=0.1"
     );
 
-    
-    var tl6 = gsap.timeline();
-    tl6.from(".cover", 1, { scaleX: 0, transformOrigin: "right" });
-    tl6.to(".cover", 1, { scaleX: 0, transformOrigin: "left" }, "reveal");
-    tl6.from(".carousel-item.active", 1, { opacity: 0 }, "reveal");
+  var tl6 = gsap.timeline();
+  tl6.from(".cover", 1, { scaleX: 0, transformOrigin: "right" });
+  tl6.to(".cover", 1, { scaleX: 0, transformOrigin: "left" }, "reveal");
+  tl6.from(".carousel-item.active", 1, { opacity: 0 }, "reveal");
 
+  var tl7 = gsap.timeline();
+  tl7.from("#rectangle rect", {
+    scaleX: 0,
+    transformOrigin: "right",
+    delay: 1,
+    ease: Power2.easeOut,
+  });
+  tl7.to("#rectangle rect", { scaleX: 1, transformOrigin: "left" }, "reveal");
 
-    var tl7 = gsap.timeline();
-    tl7.from('#rectangle rect', { scaleX: 0, transformOrigin: "right", delay: 1 , ease: Power2.easeOut });
-    tl7.to('#rectangle rect',   { scaleX: 1, transformOrigin: "left" }, "reveal");
+  var tl8 = gsap.timeline();
+  tl8.from("#rectangleblack rect", {
+    scaleX: 0,
+    transformOrigin: "right",
+    delay: 1.5,
+    ease: Power2.easeOut,
+  });
+  tl8.to(
+    "#rectangleblack rect",
+    { scaleX: 1, transformOrigin: "left" },
+    "reveal"
+  );
 
-    var tl8 = gsap.timeline();
-    tl8.from('#rectangleblack rect',{ scaleX: 0, transformOrigin: "right", delay: 1.5,  ease: Power2.easeOut  });
-    tl8.to('#rectangleblack rect', { scaleX: 1, transformOrigin: "left" }, "reveal");
+  var tl9 = gsap.timeline();
+  var path = document.querySelector("#circle circle");
 
-
-    var tl9 = gsap.timeline();    
-    var path = document.querySelector('#circle circle');
-    
-    if(path){
-      var lenght = path.getTotalLength();
-      tl9.set(path, {strokeDasharray:lenght});
-      tl9.fromTo(path, 3, {strokeDashoffset:lenght}, {strokeDashoffset:0}); 
-    }
-    
-  
+  if (path) {
+    var lenght = path.getTotalLength();
+    tl9.set(path, { strokeDasharray: lenght });
+    tl9.fromTo(path, 3, { strokeDashoffset: lenght }, { strokeDashoffset: 0 });
+  }
 }
 
+function leaveAnimation() {}
 
-function leaveAnimation() {
 
-}
 
 function delay(n) {
   n = n || 2000;
@@ -147,9 +142,6 @@ function delay(n) {
   });
 }
 
-
-
-
 barba.init({
   sync: true,
   transitions: [
@@ -159,22 +151,21 @@ barba.init({
 
         // leaveAnimation();
         pageTransition();
-        
+
         await delay(1200);
         done();
       },
 
       async enter(data) {
-        
         contentAnimation();
-
       },
 
       async once(data) {
-        
         contentAnimation();
-
       },
     },
   ],
 });
+
+
+AOS.init();
