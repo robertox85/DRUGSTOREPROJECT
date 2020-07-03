@@ -2,7 +2,6 @@
 {% assign current = page.url | downcase | split: '/' %}
 
 <body data-barba="wrapper">
-
     <ul class="transition">
         <li></li>
         <li></li>
@@ -11,10 +10,12 @@
         <li></li>
     </ul>
 
-    {% include navigazione.html %}
 
     <div class="wrapper">
-        <main data-barba="container" data-barba-namespace="{{page.url | replace: ".html", "" | split: '/'  }}" class="{{page.url | replace: ".html", "" | split: '/'  }}">
+        <main data-barba="container" data-barba-namespace="{{page.url | replace: ".html", "" | split: '/'  }}"
+            class="{{page.url | replace: ".html", "" | split: '/'  }} {{page.layout }}">
+
+            {% include navigazione.html %}
 
             <section class="viewport">
 
@@ -29,11 +30,7 @@
                         <div id="carouselId" class="carousel featured" data-ride="carousel">
                             <div class="carousel-inner" role="listbox">
                                 <div class="carousel-item active" style="background-image:url({{page.header_img}});">
-
                                 </div>
                             </div>
                         </div>
                         {% endif %}
-
-
-                    

@@ -2,37 +2,34 @@ main.azienda {
   .page__title span {
     color: $secondary;
   }
-  
-  .heading{
-      background-color: #F7F7F7;
+
+  .heading {
+    background-color: #f7f7f7;
   }
 
-  .etica{
-      h4{
-          line-height: normal;
-      }
+  .etica {
+    h4 {
+      line-height: normal;
+    }
   }
 }
 
-
-
-main.servizi{
-  
+main.home,
+main.servizi {
   .text {
     display: inline-block;
-    
-    
   }
-  
-  .text__first, .text__second {
+
+  .text__first,
+  .text__second {
     position: relative;
   }
-  
+
   .text__word {
     opacity: 0;
   }
-  
-  .text__first-bg, 
+
+  .text__first-bg,
   .text__second-bg {
     display: block;
     width: 110%;
@@ -45,28 +42,67 @@ main.servizi{
     transform: scaleX(0);
     min-height: 300px;
   }
-  .text__first-bg.data-titolo{
+  .text__first-bg.data-titolo {
     min-height: inherit;
     width: 800px;
   }
   .text__first-bg {
     background-color: #333;
   }
- 
-  #data-contenuto{
+
+  #data-contenuto {
     display: block;
     max-width: 80%;
-    & + .text__first-bg{
+    & + .text__first-bg {
       width: 90%;
     }
   }
-  .number{
+  .number {
     position: absolute;
     top: -180px;
     right: 185px;
     opacity: 0;
   }
 }
-.width-max-content{
-  // width: max-content;
+
+.carousel.home {
+  .carousel-item {
+    min-height: 650px;
+  }
+  .carousel-caption {
+    flex-direction: column;
+    justify-content: center;
+    bottom: 120px;
+  }
+
+  #circle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    circle{
+      
+      stroke-width:1px;
+      fill:none;
+      
+    }
+  }
+
+  #rectangle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-20%);
+  }
+
+  #rectangleblack {
+    position: absolute;
+    right: 0%;
+
+    top: 22%;
+  }
+}
+main.home {
+  .text__first-bg {
+    min-height: inherit;
+  }
 }

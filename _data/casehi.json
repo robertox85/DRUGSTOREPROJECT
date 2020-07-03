@@ -1,0 +1,46 @@
+[
+    {
+        "titolo": "Zephyr Sky Bar",
+        "sottotitolo": "Hyatt Regency, Sydney",
+        "featured":"Rooftop bar in stile nautico con divanetti in pelle, pavimenti in teak e corde nautiche a decoro, posizionato al 12^ piano dell’albergo Hyatt Regency 5* Luxury a Sydney",
+        "link":"",
+        "header_img": "assets/images/CASE_1_HEADER.jpg",
+        "risultati": "Fatturato lordo di 2,6 Ml di dollari nei primi 6 mesi di operatività<br><br>Australia Best Hotel Bar 2018 by HM",
+        "interventi": [
+            "Ideazione e sviluppo del concept",
+            "Ideazione dell’offerta  F&B",
+            "Menù engineering",
+            "Pianificazione delle aree di lavoro",
+            "Ricerca dei fornitori",
+            "Sviluppo profitti e costi reparto Beverage",
+            "Ricettario & schede tecniche",
+            "Gestione inventario",
+            "Impostazione delle procedure di servizio e politica aziendale",
+            "Selezione e formazione del personale su servizio, prodotto e cultura del brand",
+            "Impostazione del sistema di vendita e gestionale POS",
+            "Collaudo pre-apertura",
+            "Monitoraggio ed analisi degli standard qualitativi",
+            "Programmazione degli interventi specifici mirati alla crescita dell’attività",
+            "Assistenza gestionale ed operativa",
+            "Gestione delle risorse umane e verifica delle performance",
+        ]
+    },
+    {
+        "titolo": "BUNKER KITCHEN CLUB",
+        "sottotitolo": "Kitchen Club, Roma",
+        "featured":"Rooftop bar in stile nautico con divanetti in pelle, pavimenti in teak e corde nautiche a decoro, posizionato al 12^ piano dell’albergo Hyatt Regency 5* Luxury a Sydney",
+        "link":"A pochi passi dalla famigerata Fontana di Trevi, nel cuore di Roma, si fa spazio tra le istituzioni ristorative romane, una nuova realtà gastronomica  guidata dallo chef e patron Nicholas Amici. Un ambiente moderno con luci soffuse ed un design tanto minimal quanto confortevole, che accoglie fino ad un massimo di 26 coperti",
+        "header_img": "assets/images/CASE_2_HEADER.jpg",
+        "risultati": "Top 50 della guida “I Cento - Roma” edita da EDT Editore<br><br>Puntarella d’oro 2020 per miglior offerta al calice",
+        "interventi": [
+            "Sviluppo dell’offerta Beverage",
+            "Ricerca dei fornitori",
+            "Sviluppo profitti e costi reparto Beverage",
+            "Gestione inventario",
+            "Impostazione delle procedure di servizio e politica aziendale",
+            "Selezione e formazione del personale su servizio, prodotto e cultura del brand",
+            "Affiancamento direttivo"
+        ]
+    }
+    
+]

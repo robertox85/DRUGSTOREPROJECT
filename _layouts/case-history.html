@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+{%- include head.html -%}
+
+<!-- body -->
+
+{%- include header.html -%}
+
+{%- for case in site.data.casehi -%}
+
+<div id="carouselId" class="carousel featured" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active" style="background-image:url({{case.header_img}});">
+            
+            {%- if case.titolo || case.sottotiolo-%}
+            <div class="container p-bottom-1">
+                <div class="row">
+                    <div class="col-6">
+                        {%- endif -%}
+
+                        {%- if case.titolo -%}
+                        <h1 class="titolo">{{case.titolo}}</h1>
+                        {%- endif -%}
+
+                        {%- if case.sottotitolo -%}
+                        <h1 class="sottotitolo">{{case.sottotitolo}}</h1>
+                        {%- endif -%}
+
+                        {%- if case.featured -%}
+                            <h3 class="small">{{case.featured}}</h3>
+                        {%- endif -%}
+
+
+
+                        {%- if case.titolo || case.sottotitolo-%}
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            
+        </div>
+        <div class="cover"></div>
+    </div>
+</div>
+
+<div class="container-fluid case">
+    <div class="row">
+        <div class="intervento order-2 order-lg-1 col-lg-6 offset-1 p-top-0">
+
+            <h3 class="subtitle color__primary_dark font-weight-bold m-bottom-0">L’intervento</h3>
+            {%- if case.risultati -%}
+                <ul class="list-unstyled">
+                    {%- for intervento in {{case.interventi}} -%}
+                    <li>
+                        <h3 class="color__primary">
+                            {{intervento}}
+                        </h3>
+                    </li>
+                    {%- endfor -%}
+                </ul>
+            {%- endif -%}
+            
+        </div>
+        <div class="risultati  order-1 order-lg-2 col-lg-5 bg__primary_black p-top-2 p-bottom-4 p-left-1">
+            <h1 class="sidebar text-uppercase color__standard_white font-weight-bold m-bottom-1">RISULTATI<br>& AWARDS</h1>
+
+            <h3 class="col-md-8 ml-md-0 p-md-0 color__standard_white text-uppercase">{{case.risultati}}</h3>
+            
+        </div>
+    </div>
+</div>
+
+
+{%- endfor -%}
+
+
+
+{% include footer.html %}

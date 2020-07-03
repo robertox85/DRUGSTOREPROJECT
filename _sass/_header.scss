@@ -1,37 +1,41 @@
-body{
+body {
   overflow-x: hidden;
 }
 
 .featured {
   .carousel-item {
     min-height: 600px;
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 }
 
-main.servizi{
-  .featured .carousel-item{
+main.servizi {
+  .featured .carousel-item {
     background-size: inherit;
     min-height: 134px;
     margin-top: 110px;
     margin-bottom: 80px;
   }
-  .nav-servizi li a{
-    background-color: rgba($color: #D8D8D8, $alpha: .43);
+  .nav-servizi li a {
+    background-color: rgba($color: #d8d8d8, $alpha: 0.43);
     color: $primary;
     text-transform: uppercase;
     padding: 14px 50px;
-
   }
-  .nav-servizi li a.active{
+  .nav-servizi li a.active {
     background: $secondary;
     color: $standard_white;
   }
-  .dettaglio-servizi li{
+  .dettaglio-servizi li {
     position: relative;
-    &::before{
+    &::before {
       content: '';
       width: 23px;
       height: 23px;
@@ -44,18 +48,15 @@ main.servizi{
     }
   }
 
-  @media screen and (min-width:1200px){
-    .col-lg-6.bg__primary{
+  @media screen and (min-width: 1200px) {
+    .col-lg-6.bg__primary {
       position: absolute;
       right: 0;
       transform: translateY(50%);
       max-width: 55%;
     }
   }
-  
-  
 }
-
 
 ul.transition {
   display: flex;
@@ -79,29 +80,24 @@ ul.transition li {
   height: 100%;
 }
 
-// body {
-//   overflow-x: hidden;
-//   overflow-y: scroll;
-// }
+.case-history {
 
-// .viewport {
-//   overflow: hidden;
-//   position: fixed;
-//   height: 100%;
-//   width: 100%;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-// }
+  .featured .carousel-item{
+    min-height: 900px;
+  }
+  .cover{
+    position: absolute;
+  }
 
-// .scroll-container {
-//   position: absolute;
-//   overflow: hidden;
-//   z-index: 10;
-//   display: flex;
-//   justify-content: center;
-//   backface-visibility: hidden;
-//   transform-style: preserve-3d;
-//   width: 100%;
-// }
+  .cover {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+  @media screen and (min-width:992px) {
+    .risultati{
+      top: -100px;
+    }
+  }
+  
+}

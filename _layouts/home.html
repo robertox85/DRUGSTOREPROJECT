@@ -6,7 +6,137 @@
 <!-- body -->
 
 {% include header.html %}
+<div id="carouselId" class="carousel slide featured home" data-ride="carousel">
+    
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+            <div class="carousel-caption d-none d-md-flex text-left">
+                <svg id="circle" width="526px" height="526px" viewBox="0 0 526 526" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                    <circle id="Oval" cx="262" cy="262" r="262" stroke="#979797"></circle>
+
+                </svg>
+
+                
+                <svg id="rectangle" width="482px" height="336px" viewBox="0 0 482 336" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect id="rect" x="0" y="0" width="482" height="336" fill="#CCC5B0"></rect>
+                    
+                </svg>
+
+              
+
+                <h1 class="caption big color__primary position-relative m-bottom-0">
+                    <span class="text__first">
+                        <span class="text__word">
+                            Food & Beverage<br> Consultancy
+                        </span>
+                        <span class="text__first-bg"></span>
+                    </span>
+                </h1>
+
+                <h3 class="caption big color__primary position-relative m-bottom-0">
+                    <span class="text__first">
+                        <span class="text__word">
+                            Consulenza strategica a 360° per la ristorazione e l’hotellerie
+                        </span>
+                        <span class="text__first-bg"></span>
+                    </span>
+                </h3>
+
+                <h3 class="caption btn btn-home bg__primary color__standard_white position-relative">
+                    <span class="text__first">
+                        <span class="text__word">
+                            La nostra missione
+                        </span>
+                        <span class="text__first-bg"></span>
+                    </span>
+                </h3>
+                
+            </div>
+            <svg id="rectangleblack" width="700px" height="434px" viewBox="0 0 700 434" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                <defs>
+                    <linearGradient x1="100%" y1="17.5605537%" x2="50%" y2="78.7844149%" id="linearGradient-1">
+                        <stop stop-color="#404040" offset="0%"></stop>
+                        <stop stop-color="#000000" offset="100%"></stop>
+                    </linearGradient>
+                </defs>
+                
+                <rect id="Rectanglee" x="0" y="0" width="700" height="433" stroke="#000000"></rect>
+
+                
+               
+            </svg>
+        </div>
+        
+    </div>
+   
+</div>
 
 
+
+
+
+<div class="container-fluid p-top-2 bg__gradient-secondary">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12  m-bottom-2">
+                <img src="assets/images/DRUGSTORE_PROJECT_SOLO_SCRITTA_NERO.png" alt="">
+            </div>
+            <div class="col-12 m-bottom-2">
+                <h1>Creiamo format vincenti<br> dal concept alla realizzazione</h1>
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/startup.png" alt="">
+                <h2 class="m-top-0 color__primary font-weight-bold">START-UP</h2>
+                <p class="m-top-0 m-bottom-3 color__primary_light">Drugstore project è in grado di sviluppare progetti a 360° grazie all'esperienza manageriale decennale nella ristorazione dell’Hotellerie di lusso, nel mondo della Miscelazione e del Vino, ed in quello del Food a tutti i livelli, dal tradizionale al gourmet.</p>
+            </div>
+
+            <div class="col-md-4">
+                <img src="assets/images/restyling.png" alt="">
+                <h2 class="m-top-0 color__primary font-weight-bold">RESTYLING</h2>
+                <p class="m-top-0 m-bottom-3 color__primary_light">A seguito della raccolta e dello studio di dati sensibili ci occupiamo di sottolineare quali siano i punti di forza e di debolezza del progetto, disegnando una strategia chiara che punti ad un riposizionamento del brand sulmercato che possa garantire un maggior profitto.</p>
+            </div>
+
+            <div class="col-md-4">
+                <img src="assets/images/affiancamento.png" alt="">
+                <h2 class="m-top-0 color__primary font-weight-bold">AFFIANCAMENTO</h2>
+                <p class="m-top-0 m-bottom-3 color__primary_light">Al termine del mandato o su richiesta di un nuovo cliente, offriamo la nostra assistenza nella gestione dell’attività per un periodo da concordare, volta al perfezionamento delle dinamiche interne e ad una crescita mirata del business.</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid p-top-2 p-bottom-4">
+    <div class="container">
+        <div class="row text-center">
+
+            {%- for servizio in site.data.servizi -%}
+                <div class="col-md-4 nopadding position-relative {{servizio.titolo | downcase | split : " " | first | replace: ",", "" | replace: "<br>", ""}}">
+                    <img class="img-fluid w-100" src="{{servizio.featured}}" alt="">
+                    <h3 class="color__standard_white position-absolute">{{servizio.titolo}}</h3>
+                </div>
+            {%- endfor -%}
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid p-top-2">
+    <div class="row">
+        <div class="col-12 px-0" style="background-image: url(assets/images/home-food.png); background-position: top center; background-size: cover; height: 475px;">
+            
+        </div>
+    </div>
+</div>
 
 {% include footer.html %}
+
+
+<script>
+
+
+
+</script>

@@ -7,3 +7,20 @@
 @include generate(p-right,  padding-right);
 @include generate(p-top,  padding-top);
 @include generate(p-bottom,  padding-bottom);
+
+
+.nopadding{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+    justify-content: center;
+    h3{
+        bottom: 50px;
+    }
+    &.brand{
+        h3{
+            color: $primary!important;
+        }
+    }
+}
