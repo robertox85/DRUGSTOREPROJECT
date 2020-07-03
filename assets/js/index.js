@@ -95,7 +95,7 @@ function contentAnimation() {
   var tl6 = gsap.timeline();
   tl6.from(".cover", 1, { scaleX: 0, transformOrigin: "right" });
   tl6.to(".cover", 1, { scaleX: 0, transformOrigin: "left" }, "reveal");
-  tl6.from(".carousel-item.active", 1, { opacity: 0 }, "reveal");
+  tl6.from("main.case-history .carousel-item.active", 1, { opacity: 0 }, "reveal");
 
   var tl7 = gsap.timeline();
   tl7.from("#rectangle rect", {
