@@ -65,24 +65,15 @@ function contentAnimation() {
   
   var tl = gsap.timeline();
 
-  tl.from(".guido img, .guido h1,.guido h2,.guido h3,.guido h4,.guido p", {
-    duration: 1.2,
-    translateX: 50,
+  tl.from("img, h1,h2,h3,h4,p, a:not(.nav-link):not(.navbar-brand)", {
+    duration: 1,
+    translateY: 50,
     opacity: 0,
-    stagger: 0.2,
   });
  
-  var tl2 = gsap.timeline();
-  tl2.from(".mirko img, .mirko h1,.mirko h2,.mirko h3,.mirko h4,.mirko p", {
-    duration: 1.2,
-    translateX: 50,
-    opacity: 0,
-    stagger: 0.2,
-  });
   
-  var tl3 = gsap.timeline();
-  // tl3.from(".azienda h1,.azienda h2,.azienda h3,.azienda h4,.azienda p", {   duration: 1.2, translateX: 50, opacity: 0, stagger: 0.2 });
-
+  
+  
   var tl4 = gsap.timeline();
   tl4
     .to(".text__first-bg", 0.5, {
@@ -114,9 +105,6 @@ function contentAnimation() {
       "-=0.1"
     );
 
-  
-
-    
     
     var tl6 = gsap.timeline();
     tl6.from(".cover", 1, { scaleX: 0, transformOrigin: "right" });
@@ -125,7 +113,6 @@ function contentAnimation() {
 
 
     var tl7 = gsap.timeline();
-    
     tl7.from('#rectangle rect', { scaleX: 0, transformOrigin: "right", delay: 1 , ease: Power2.easeOut });
     tl7.to('#rectangle rect',   { scaleX: 1, transformOrigin: "left" }, "reveal");
 
@@ -134,11 +121,15 @@ function contentAnimation() {
     tl8.to('#rectangleblack rect', { scaleX: 1, transformOrigin: "left" }, "reveal");
 
 
-    var tl9 = gsap.timeline();
+    var tl9 = gsap.timeline();    
     var path = document.querySelector('#circle circle');
-    var lenght = path.getTotalLength();
-    tl9.set(path, {strokeDasharray:lenght});
-    tl9.fromTo(path, 3, {strokeDashoffset:lenght}, {strokeDashoffset:0}); 
+    
+    if(path){
+      var lenght = path.getTotalLength();
+      tl9.set(path, {strokeDasharray:lenght});
+      tl9.fromTo(path, 3, {strokeDashoffset:lenght}, {strokeDashoffset:0}); 
+    }
+    
   
 }
 
