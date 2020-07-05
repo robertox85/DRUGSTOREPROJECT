@@ -108,7 +108,7 @@ h3 {
 
 }
 
-h4 {
+h4,.h4 {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 400;
   font-size: rem(28px);
@@ -217,4 +217,7 @@ footer{
         color: $secondary_dark;
         letter-spacing: rem(2.17px);
     }
+}
+.line-height-normal{
+  line-height: 1.5;
 }
