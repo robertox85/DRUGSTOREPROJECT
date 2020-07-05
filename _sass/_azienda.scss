@@ -102,8 +102,12 @@ main.servizi {
   }
 }
 main.home {
+  h1{
+    .text__first-bg{
+      width: 550px;
+    }
+  }
   .text__first-bg {
     min-height: inherit;
-    width: 550px;
   }
 }
