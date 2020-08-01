@@ -125,12 +125,12 @@
 <div class="container-fluid p-top-2 p-bottom-4">
     <div class="container">
         <div class="row text-center">
-
             {%- for servizio in site.data.servizi -%}
-            <div
-                class="col-md-4 nopadding position-relative {{servizio.titolo | downcase | split : " " | first | replace: ",", "" | replace: "<br>", ""}}">
-                <img class="img-fluid w-100" src="{{servizio.featured}}" alt="">
-                <h3 class="color__standard_white position-absolute">{{servizio.titolo}}</h3>
+            <div class="col-md-4 nopadding position-relative {{servizio.titolo | downcase | split : " " | first | replace: ",", "" | replace: "<br>", ""}}">
+                <a href="servizi.html?servizio={{forloop.index}}" class="w-100 text-center">
+                    <img class="img-fluid w-100" src="{{servizio.featured}}" alt="">
+                    <h3 class="color__standard_white position-absolute w-100">{{servizio.titolo}}</h3>
+                </a>
             </div>
             {%- endfor -%}
         </div>

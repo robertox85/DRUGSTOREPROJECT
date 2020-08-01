@@ -15,7 +15,7 @@
                 <ul class="pl-0 mb-0 d-lg-flex flex-lg-wrap list-unstyled nav-servizi">
 
                     {% for servizio in site.data.servizi %}
-                    <li class="nav-item">
+                    <li class="nav-item" data-index="{{forloop.index}}">
                         <a class="link nav-link servizio-link" href="#" 
                             data-counter={{forloop.index | prepend: "0" | truncate: 2, ""}}
                             data-titolo="{{servizio.etichetta}}"
@@ -106,7 +106,7 @@
                     <span class="text__first">
                         <span class="">
                             <ul class="list-unstyled dettaglio-servizi text__word" id="data-lista">
-                                {%- for item in {{site.data.servizi[0].items}} -%}
+                                {%- for item in site.data.servizi[0].items -%}
                                     <li>
                                         <h3 class="color__primary">
                                             {{item}}

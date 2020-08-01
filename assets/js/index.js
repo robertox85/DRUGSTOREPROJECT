@@ -15,7 +15,11 @@ function pageTransition() {
     stagger: 0.1,
     delay: 0.1,
   });
+
 }
+
+
+
 
 document.addEventListener(
   "click",
@@ -36,6 +40,7 @@ document.addEventListener(
 );
 
 function renderText(data) {
+  
   // var template = document.getElementById('template').innerHTML;
   var titolo = document.getElementById("template-titolo").innerHTML;
   var contenuto = document.getElementById("template-contenuto").innerHTML;
@@ -59,9 +64,16 @@ function renderText(data) {
   document.getElementById("data-contenuto").innerHTML = renderedContenuto;
   document.getElementById("data-lista").innerHTML = renderedLista;
   document.getElementById("data-counter").innerHTML = renderedCounter;
+
+
+  
+  
+
 }
 
 function contentAnimation() {
+
+  
   var tl4 = gsap.timeline();
   tl4
     .to(".text__first-bg", 0.5, {
@@ -127,6 +139,19 @@ function contentAnimation() {
     tl9.set(path, { strokeDasharray: lenght });
     tl9.fromTo(path, 3, { strokeDashoffset: lenght }, { strokeDashoffset: 0 });
   }
+
+
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const servizio = urlParams.get('servizio')
+  if(servizio != null){
+    const link = document.querySelectorAll("[data-index='"+servizio+"']");
+    link[0].children[0].click()
+  }
+
+  
+  
+
 }
 
 function leaveAnimation() {}

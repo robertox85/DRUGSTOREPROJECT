@@ -12,14 +12,14 @@
     <div class="carousel-inner" role="listbox">
         <div class="carousel-item active" style="background-image:url({{case.header_img}});">
             
-            {%- if case.titolo || case.sottotiolo-%}
+            {%- if case.titolo != '' or case.sottotitolo != '' -%}
             <div class="container p-bottom-1">
                 <div class="row">
                     <div class="col-6">
                         {%- endif -%}
 
                         {%- if case.titolo -%}
-                        <h1 class="titolo">{{case.titolo}}</h1>
+                            <h1 class="titolo">{{case.titolo}}</h1>
                         {%- endif -%}
 
                         {%- if case.sottotitolo -%}
@@ -32,7 +32,8 @@
 
 
 
-                        {%- if case.titolo || case.sottotitolo-%}
+                        {%- if case.titolo != '' or case.sottotitolo != '' -%}
+                        
                     </div>
                 </div>
             </div>
@@ -50,7 +51,7 @@
             <h3 class="subtitle color__primary_dark font-weight-bold m-bottom-0">L’intervento</h3>
             {%- if case.risultati -%}
                 <ul class="list-unstyled">
-                    {%- for intervento in {{case.interventi}} -%}
+                    {%- for intervento in case.interventi -%}
                     <li>
                         <h3 class="color__primary">
                             {{intervento}}
