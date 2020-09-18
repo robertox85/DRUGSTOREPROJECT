@@ -21,6 +21,8 @@
                             data-titolo="{{servizio.etichetta}}"
                             data-contenuto="{{servizio.contenuto}}"
                             data-items="{{servizio.items | join: ";" }}"
+                            data-box_title="{{servizio.box_title}}"
+                            data-box_items="{{servizio.box_items}}"
                             >{{servizio.etichetta}}</a>
                     </li>
                     {% endfor %}
@@ -76,7 +78,7 @@
 
    
 
-    <div class="container" style="min-height: 700px;">
+    <div class="container" style="min-height: 960px;">
 
         
         <div class="row p-top-4">
@@ -89,6 +91,7 @@
             
     
             <div class="col-md-6">
+                
                 <p class="color__primary position-relative">
                     <span class="text__first position-absolute">
                         <span class="text__word" id="data-contenuto">
@@ -96,7 +99,11 @@
                         </span>
                         <span class="text__first-bg"></span>
                     </span>
-                </p>
+
+                     
+                </p>       
+                
+
             </div>
     
             <div class="col-md-6">
@@ -123,6 +130,25 @@
                 
                 
             </div>
+
+            <div class="col-md-6" id="box">
+                <p class="color__primary position-relative" id="">
+                        <span class="text__first position-absolute">
+                            <span class="text__word" id="">
+                                
+                                <span id="data-box_title" class="mb-3">{{site.data.servizi[0].box_title}} </span><br>
+
+                                {% for item in site.data.servizi[0].box_items %}
+                                    <span class="px-3 font-weight-bold color__primary">{{item}}</span><br>
+                                {% endfor %}
+                                
+                            </span>
+                            <span class="text__first-bg"></span>
+                        </span>
+                    </p>
+            </div>
+
+            
         </div>
     
     </div>
@@ -132,20 +158,27 @@
             <div class="col-lg-6 bg__secondary">
                 <div class="p-top-1 p-bottom-3 p-left-4 p-right-4">
                     <h1>THINK<br> BIGGER!</h1>
-                    <h3 class="m-top-0 color__standard_white">SPAZIO RETAIL</h3>
-                    <p class="m-bottom-0">Che si tratti di un progetto già in essere o di uno nuovo da sviluppare,
-                        elaboriamo il business plan mirando principalmente alla replicabilità del format e di conseguenza
-                        alla sua espansione.</p>
+                    
+
+
+                    <h3 class="m-top-0 color__standard_white">FRANCHISING</h3>
+                    <p class="m-bottom-0">Che si tratti di un progetto già in essere o di uno nuovo da sviluppare, una volta effettuate le consuete valutazioni ed analisi di mercato necessarie, elaboriamo il business plan<br>
+                        mirando principalmente alla replicabilità del format ed alla sua espansione.<br>
+                        Andiamo successivamente a redigere i contratti di <br>
+                        franchising che definiscono diritti e doveri commerciali, royalty, quote d’ingresso e le norme a cui investitori ed <br>
+                        affiliati devono attenersi.</p>
     
                     <h3 class="m-top-0 color__standard_white">SPAZIO RETAIL</h3>
-                    <p class="m-bottom-0">Che si tratti di un progetto già in essere o di uno nuovo da sviluppare,
-                        elaboriamo il business plan mirando principalmente alla replicabilità del format e di conseguenza
-                        alla sua espansione.</p>
+                    <p class="m-bottom-0">Grazie ad una formazione nell'hospitality improntata sul customer service, individuata la strategia e definita <br>
+                        l’identità aziendale, diamo vita a progetti retail F&B (vendita al dettaglio) che abbinano peculiarità e qualità dei prodotti ad un servizio al cliente meticoloso. Proponiamo dunque una prospettiva di vendita innovativa ed efficiente <br>
+                        supportata da un design che racconta ed esalta l’immagine del brand.</p>
     
-                    <h3 class="m-top-0 color__standard_white">SPAZIO RETAIL</h3>
-                    <p class="m-bottom-0">Che si tratti di un progetto già in essere o di uno nuovo da sviluppare,
-                        elaboriamo il business plan mirando principalmente alla replicabilità del format e di conseguenza
-                        alla sua espansione.</p>
+                    <h3 class="m-top-0 color__standard_white">FOOD COURT</h3>
+                    <p class="m-bottom-0">Ricreiamo su piccola o larga scala format ristorativi che trovano la loro ubicazione in aree ristoro di centri <br>
+                        commerciali o grandi spazi eventi. Lavoriamo a stretto <br>
+                        contatto con i responsabili del reparto F&B di tali <br>
+                        organizzazioni per operare nel rispetto delle normative <br>
+                        stabilite dall’amministrazione della struttura interessata. Quindi studiamo e progettiamo la disposizione delle aree di lavoro in funzione del concept ideato.</p>
     
     
                 </div>

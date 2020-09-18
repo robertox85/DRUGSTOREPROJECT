@@ -16,6 +16,14 @@ main.azienda {
 
 main.home,
 main.servizi {
+
+  #data-box_title{
+    background-color: #333;
+    width: auto;
+    display: inline-block;
+    color: $standard_superlight;
+    padding: 10px 40px 10px 10px;
+  }
   .text {
     display: inline-block;
   }
@@ -109,5 +117,12 @@ main.home {
   }
   .text__first-bg {
     min-height: inherit;
+  }
+  .nopadding{
+    max-height: 600px;
+    img{
+      object-fit: cover;
+      height: 100%;
+    }
   }
 }

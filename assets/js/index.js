@@ -40,7 +40,28 @@ document.addEventListener(
 );
 
 function renderText(data) {
-  
+  var tl = gsap.timeline();
+  if(data.counter != 01){
+      
+
+      tl.to("#box", {
+        duration: 0.5,
+        scaleX: 1,
+        opacity: 0,
+        ease: Power2.easeInOut,
+        stagger: 0.1,
+      });
+    
+  }else{
+    tl.to("#box", {
+      duration: 0.5,
+      scaleX: 1,
+      opacity: 1,
+      ease: Power2.easeInOut,
+      stagger: 0.1,
+    });
+  }
+
   // var template = document.getElementById('template').innerHTML;
   var titolo = document.getElementById("template-titolo").innerHTML;
   var contenuto = document.getElementById("template-contenuto").innerHTML;
@@ -50,22 +71,31 @@ function renderText(data) {
   var json = {
     titolo: data.titolo,
     contenuto: data.contenuto,
+    box_title: data.box_title,
     items: data.items.split(";"),
   };
+  
+  
 
   var renderedTitolo = Mustache.render(titolo, { titolo: data.titolo });
   var renderedContenuto = Mustache.render(contenuto, {
     contenuto: data.contenuto,
   });
+
+  
+  
+  
   var renderedLista = Mustache.render(lista, { items: data.items.split(";") });
   var renderedCounter = Mustache.render(counter, { counter: data.counter });
+  
+  
 
   document.getElementById("data-titolo").innerHTML = renderedTitolo;
   document.getElementById("data-contenuto").innerHTML = renderedContenuto;
   document.getElementById("data-lista").innerHTML = renderedLista;
   document.getElementById("data-counter").innerHTML = renderedCounter;
-
-
+  
+  
   
   
 
