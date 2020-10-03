@@ -183,7 +183,11 @@ function contentAnimation() {
   
 
 }
+function resetScroll(){
+  window.scrollTo(0, 0);
+  console.log('ciao');
 
+}
 function leaveAnimation() {}
 
 
@@ -213,6 +217,7 @@ barba.init({
 
       async enter(data) {
         contentAnimation();
+        resetScroll();
       },
 
       async once(data) {

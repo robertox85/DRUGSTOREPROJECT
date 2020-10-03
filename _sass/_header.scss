@@ -101,3 +101,17 @@ ul.transition li {
   }
   
 }
+
+
+@keyframes offset {
+  from {
+    stroke-dashoffset: 0px;
+  }
+  to {
+    stroke-dashoffset: 1px;
+  }
+}
+
+svg path {
+  animation: offset 3s linear forwards infinite alternate;
+}

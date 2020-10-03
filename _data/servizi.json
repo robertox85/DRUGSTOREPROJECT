@@ -1,6 +1,6 @@
 [
     {
-        "etichetta": "ANALISI",
+        "etichetta": "ANALISI E PROGETTAZIONE",
         "titolo": "Analisi, ideazione e progettazione",
         "contenuto": "Per sviluppare un progetto di successo e di tendenza è necessaria un’analisi iniziale del territorio, uno studio delle criticità della struttura<br> e un’indagine di mercato proiettata sulla potenziale clientela e l’identificazione del proprio target.<br> Ci serviamo di dati estrapolati da piattaforme <br>istituzionali per sviluppare assieme al cliente il format più redditizio basato sulle nostre analisi di mercato.<br> Forniamo quindi una proiezione economica sulle reali possibilità di crescita del format ristorativo.",
         "featured": "assets/images/analisi.png",
@@ -21,7 +21,7 @@
         ]
     },
     {
-        "etichetta": "MENU ENGENEERING",
+        "etichetta": "FOOD & BEVERAGE",
         "titolo": "Offerta<br> Food & Beverage",
         "featured": "assets/images/tetiana-shyshkina-MM1oGvPb2RI-unsplash.jpg",
         "contenuto": "Concordata la strategia con il cliente, sviluppiamo i menù strutturati secondo<br> un rigido studio dei costi, realizziamo un’analisi dei profitti e settiamo gli<br> standard di in/out di magazzino, ponendo un’attenzione particolare al riciclo delle materie prime<br> utile ad abbattere gli sprechi.",
@@ -69,7 +69,7 @@
         "box_items": ""
     },
     {
-        "etichetta": "BRAND IDENTITY",
+        "etichetta": "BRANDING & WEB DESIGN",
         "titolo": "Brand identity & Web",
         "featured": "assets/images/brand.png",
         "contenuto": "Coerentemente con il format delineato, il reparto di graphic e web design sviluppa e realizza l’identità grafica del brand rendendola riconoscibile ed originale. Successivamente la declina sugli elementi grafici e la coordina sui vari canali di comunicazione.",
