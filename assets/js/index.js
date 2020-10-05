@@ -102,7 +102,8 @@ function renderText(data) {
 }
 
 function contentAnimation() {
-
+  
+  
   
   var tl4 = gsap.timeline();
   tl4
@@ -229,3 +230,4 @@ barba.init({
 
 
 AOS.init();
+
