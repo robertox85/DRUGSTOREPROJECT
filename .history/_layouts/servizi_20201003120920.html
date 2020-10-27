@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+{%- include head.html -%}
+
+<!-- body -->
+
+{%- include header.html -%}
+
+<div class="container-fluid heading ">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12">
+
+                <ul class="pl-0 mb-0 d-lg-flex flex-lg-wrap list-unstyled nav-servizi">
+
+                    {% for servizio in site.data.servizi %}
+                    <li class="nav-item" data-index="{{forloop.index}}">
+                        <a class="link nav-link servizio-link" href="#" 
+                            data-counter={{forloop.index | prepend: "0" | truncate: 2, ""}}
+                            data-titolo="{{servizio.etichetta}}"
+                            data-contenuto="{{servizio.contenuto}}"
+                            data-items="{{servizio.items | join: ";" }}"
+                            data-box_title="{{servizio.box_title}}"
+                            data-box_items="{{servizio.box_items}}"
+                            >{{servizio.etichetta}}</a>
+                    </li>
+                    {% endfor %}
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        
+            
+       
+        
+    </div>
+
+    <script id="template-titolo" type="x-tmpl-mustache">
+        {% raw %}
+            {{titolo}}
+        {% endraw %}
+    </script>
+
+    <script id="template-contenuto" type="x-tmpl-mustache">
+        {% raw %}
+            {{{contenuto}}}
+        {% endraw %}
+    </script>
+
+    <script id="template-lista" type="x-tmpl-mustache">
+
+        {% raw %}
+            {{#items}}
+                            
+                <li>
+                    <h3 class="color__primary">
+                        {{.}}
+                    </h3>
+                </li>
+
+            {{/items}}
+        {% endraw %}
+
+    </script>
+
+
+    <script id="template-counter" type="x-tmpl-mustache">
+
+        {% raw %}
+           {{counter}}
+        {% endraw %}
+
+    </script>
+
+   
+
+    <div class="container" style="min-height: 900px;">
+
+        
+        <div class="row p-top-4">
+            <h1 class="text col-12 m-bottom-2 position-relative"> 
+                <span class="text__first">
+                    <span class="text__word" id="data-titolo">{{site.data.servizi[0].titolo}}</span>
+                    <span class="text__first-bg data-titolo"></span>
+                </span>
+            </h1>
+            
+    
+            <div class="col-md-6">
+                
+                <p class="color__primary position-relative">
+                    <span class="text__first position-absolute">
+                        <span class="text__word" id="data-contenuto">
+                            {{site.data.servizi[0].contenuto}}
+                        </span>
+                        <span class="text__first-bg"></span>
+                    </span>
+
+                     
+                </p>       
+                
+
+            </div>
+    
+            <div class="col-md-6">
+
+                <div class="position-relative">
+                    <span class="counter number" id="data-counter">01</span>
+                    <span class="text__first">
+                        <span class="">
+                            <ul class="list-unstyled dettaglio-servizi text__word" id="data-lista">
+                                {%- for item in site.data.servizi[0].items -%}
+                                    <li>
+                                        <h3 class="color__primary">
+                                            {{item}}
+                                        </h3>
+                                    </li>
+                                {%- endfor -%}
+                            </ul>
+                        </span>
+                        
+                    </span>
+                    <span class="text__first-bg" style="left: -35px;"></span>
+                    
+                </div>
+                
+                
+            </div>
+
+            <div class="col-md-6" id="box">
+                <p class="color__primary position-relative" id="">
+                        <span class="text__first position-absolute">
+                            <span class="text__word" id="">
+                                
+                                <span id="data-box_title" class="mb-3">{{site.data.servizi[0].box_title}} </span><br>
+
+                                {% for item in site.data.servizi[0].box_items %}
+                                    <span class="px-3 font-weight-bold color__primary">{{item}}</span><br>
+                                {% endfor %}
+                                
+                            </span>
+                            <span class="text__first-bg"></span>
+                        </span>
+                    </p>
+            </div>
+
+            
+        </div>
+    
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 bg__secondary">
+                <div class="p-top-1 p-bottom-3 p-left-4 p-right-4">
+                    <h1>THINK<br> BIGGER!</h1>
+                    
+
+
+                    <h3 class="m-top-0 color__standard_white">FRANCHISING</h3>
+                    <p class="m-bottom-0">Che si tratti di un progetto già in essere o di uno nuovo da sviluppare, una volta effettuate le consuete valutazioni ed analisi di mercato necessarie, elaboriamo il business plan<br>
+                        mirando principalmente alla replicabilità del format ed alla sua espansione.<br>
+                        Andiamo successivamente a redigere i contratti di <br>
+                        franchising che definiscono diritti e doveri commerciali, royalty, quote d’ingresso e le norme a cui investitori ed <br>
+                        affiliati devono attenersi.</p>
+    
+                    <h3 class="m-top-0 color__standard_white">SPAZIO RETAIL</h3>
+                    <p class="m-bottom-0">Grazie ad una formazione nell'hospitality improntata sul customer service, individuata la strategia e definita <br>
+                        l’identità aziendale, diamo vita a progetti retail F&B (vendita al dettaglio) che abbinano peculiarità e qualità dei prodotti ad un servizio al cliente meticoloso. Proponiamo dunque una prospettiva di vendita innovativa ed efficiente <br>
+                        supportata da un design che racconta ed esalta l’immagine del brand.</p>
+    
+                    <h3 class="m-top-0 color__standard_white">FOOD COURT</h3>
+                    <p class="m-bottom-0">Ricreiamo su piccola o larga scala format ristorativi che trovano la loro ubicazione in aree ristoro di centri <br>
+                        commerciali o grandi spazi eventi. Lavoriamo a stretto <br>
+                        contatto con i responsabili del reparto F&B di tali <br>
+                        organizzazioni per operare nel rispetto delle normative <br>
+                        stabilite dall’amministrazione della struttura interessata. Quindi studiamo e progettiamo la disposizione delle aree di lavoro in funzione del concept ideato.</p>
+    
+    
+                </div>
+            </div>
+            <div class="col-lg-6 bg__primary" style="background-image:url(assets/images/RISANAMENTO_BACKGROUND.jpg);background-size:cover;background-position:center">
+                <div class="p-top-1 p-bottom-3 p-left-4 p-right-4">
+                    <h2 class="color__standard_white">Compravendita, risanamento<br>
+                        e Contabilità</h2>
+                    <p class="color__standard_white">
+                        Tramite la nostra rete di agenti immobiliari e legali possiamo agevolare il cliente nel processo di
+                        acquisto o vendita di aziende già esistenti ed operanti. Inoltre grazie agli economisti di impresa
+                        nostri partners, possiamo curare la contabilità dell’attività in ogni minimo dettaglio ed attuare
+                        strategie finanziarie mirate al
+                        risanamento economico dell’azienda.</p>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+{% include footer.html %}

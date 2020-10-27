@@ -7,7 +7,7 @@
 {%- include header.html -%}
 
 <div class="container-fluid heading ">
-    <div class="container-fluid  mx-auto">
+    <div class="container-fluid px-0 mx-auto">
         <div class="row">
 
             <div class="col-12">
@@ -15,8 +15,8 @@
                 <ul class="pl-0 mb-0 row list-unstyled nav-servizi">
 
                     {% for servizio in site.data.servizi %}
-                    <li class="col w-100 px-0 nav-item" data-index="{{forloop.index}}">
-                        <a class="link nav-link servizio-link text-nowrap" href="#" data-counter={{forloop.index | prepend: "0" | truncate: 2, ""}} data-titolo="{{servizio.etichetta}}" data-contenuto="{{servizio.contenuto}}" data-items="{{servizio.items | join: " ; " }}" data-box_title="{{servizio.box_title}}"
+                    <li class="col nav-item" data-index="{{forloop.index}}">
+                        <a class="link nav-link servizio-link" href="#" data-counter={{forloop.index | prepend: "0" | truncate: 2, ""}} data-titolo="{{servizio.etichetta}}" data-contenuto="{{servizio.contenuto}}" data-items="{{servizio.items | join: " ; " }}" data-box_title="{{servizio.box_title}}"
                             data-box_items="{{servizio.box_items}}">{{servizio.etichetta}}</a>
                     </li>
                     {% endfor %}

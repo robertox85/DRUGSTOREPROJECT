@@ -1,7 +1,8 @@
-[{
-        "etichetta": "ANALISI & PROGETTAZIONE",
+[
+    {
+        "etichetta": "ANALISI E PROGETTAZIONE",
         "titolo": "Analisi, ideazione e progettazione",
-        "contenuto": "Per sviluppare un progetto di successo e di tendenza è necessaria un’analisi iniziale del territorio, uno studio delle criticità della struttura<br> e un’indagine di mercato proiettata sulla potenziale clientela e l’identificazione del proprio target. Ci serviamo di dati estrapolati da piattaforme istituzionali per sviluppare assieme al cliente il format più redditizio basato sulle nostre analisi di mercato. Forniamo quindi una proiezione economica sulle reali possibilità di crescita del format ristorativo.",
+        "contenuto": "Per sviluppare un progetto di successo e di tendenza è necessaria un’analisi iniziale del territorio, uno studio delle criticità della struttura<br> e un’indagine di mercato proiettata sulla potenziale clientela e l’identificazione del proprio target.<br> Ci serviamo di dati estrapolati da piattaforme <br>istituzionali per sviluppare assieme al cliente il format più redditizio basato sulle nostre analisi di mercato.<br> Forniamo quindi una proiezione economica sulle reali possibilità di crescita del format ristorativo.",
         "featured": "assets/images/ANALISI.jpg",
         "items": [
             "Geomarketing ed analisi di mercato",
@@ -12,7 +13,7 @@
             "Ideazione dell’offerta Food & Beverage",
             "Autorizzazioni amministrative e sanitarie (SCIA, HACCP, Sicurezza)"
         ],
-        "box_title": "PIANIFICAZIONE STRATEGICA",
+        "box_title" : "PIANIFICAZIONE STRATEGICA",
         "box_items": [
             "Analisi SWOT & PEST",
             "Business Model Canvas",
@@ -23,7 +24,7 @@
         "etichetta": "FOOD & BEVERAGE",
         "titolo": "Offerta<br> Food & Beverage",
         "featured": "assets/images/FOOD_&_BEVERAGE.jpg",
-        "contenuto": "Concordata la strategia con il cliente, sviluppiamo i menù strutturati secondo<br> un rigido studio dei costi, realizziamo un’analisi dei profitti e settiamo gli<br> standard di in/out di magazzino, ponendo un’attenzione particolare al riciclo delle materie prime utile ad abbattere gli sprechi.",
+        "contenuto": "Concordata la strategia con il cliente, sviluppiamo i menù strutturati secondo<br> un rigido studio dei costi, realizziamo un’analisi dei profitti e settiamo gli<br> standard di in/out di magazzino, ponendo un’attenzione particolare al riciclo delle materie prime<br> utile ad abbattere gli sprechi.",
         "items": [
             "Menù engineering",
             "Pianificazione delle aree di lavoro",
@@ -32,7 +33,7 @@
             "Ricettario & schede tecniche",
             "Gestione magazzino ed inventario"
         ],
-        "box_title": "",
+        "box_title" : "",
         "box_items": ""
     },
     {
@@ -48,7 +49,7 @@
             "Impostazione del sistema di vendita e gestionale POS",
             "Testing pre-apertura con affiancamento al personale"
         ],
-        "box_title": "",
+        "box_title" : "",
         "box_items": ""
     },
     {
@@ -64,7 +65,7 @@
             "Assistenza artistica sui lavori",
             "Design Management"
         ],
-        "box_title": "",
+        "box_title" : "",
         "box_items": ""
     },
     {
@@ -78,7 +79,7 @@
             "Menù Design",
             "Sviluppo Web"
         ],
-        "box_title": "",
+        "box_title" : "",
         "box_items": ""
     },
     {
@@ -93,7 +94,7 @@
             "Servizi fotografici",
             "Produzione e coordinamento eventi"
         ],
-        "box_title": "",
+        "box_title" : "",
         "box_items": ""
     }
 ]

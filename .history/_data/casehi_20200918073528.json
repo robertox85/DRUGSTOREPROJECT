@@ -1,8 +1,9 @@
-[{
-        "titolo": "Hotellerie",
+[
+    {
+        "titolo": "Zephyr Sky Bar",
         "sottotitolo": "Hyatt Regency, Sydney",
-        "featured": "Rooftop bar in stile nautico con divanetti in pelle, pavimenti in teak e corde nautiche a decoro, posizionato al 12^ piano dell’albergo Hyatt Regency 5* Luxury a Sydney. <br> <br> <br> In un ambiente raffinato ed elegante, accessibile non solo agli ospiti dell’hotel, Zephyr propone un’accattivante selezione di cocktails classici, contemporanei e sperimentali che ruotano attorno una delle più vaste e ricercate liste di vini fortificati e distillati premium d’Australia, reperiti da ogni parte del mondo. L’offerta gastronomica internazionale proposta in stile tapas, è stata concepita come perfetto abbinamento alla componente beverage. L’esperienza ad alta quota è esaltata dall’impareggiabile vista su Darling Harbour, lo splendido porto di Sydney.",
-        "link": "#",
+        "featured":"Rooftop bar in stile nautico con divanetti in pelle, pavimenti in teak e corde nautiche a decoro, posizionato al 12^ piano dell’albergo Hyatt Regency 5* Luxury a Sydney. <br> <br> <br> In un ambiente raffinato ed elegante, accessibile non solo agli ospiti dell’hotel, Zephyr propone un’accattivante selezione di cocktails classici, contemporanei e sperimentali che ruotano attorno una delle più vaste e ricercate liste di vini fortificati e distillati premium d’Australia, reperiti da ogni parte del mondo. L’offerta gastronomica internazionale proposta in stile tapas, è stata concepita come perfetto abbinamento alla componente beverage. L’esperienza ad alta quota è esaltata dall’impareggiabile vista su Darling Harbour, lo splendido porto di Sydney.",
+        "link":"#",
         "header_img": "assets/images/CASE_1_HEADER.jpg",
         "risultati": "Fatturato lordo di 2,6 Ml di dollari nei primi 6 mesi di operatività<br><br>Australia Best Hotel Bar 2018 by HM",
         "interventi": [
@@ -25,10 +26,10 @@
         ]
     },
     {
-        "titolo": "Ristorazione",
+        "titolo": "BUNKER KITCHEN CLUB",
         "sottotitolo": "Kitchen Club, Roma",
-        "featured": "A pochi passi dalla famigerata Fontana di Trevi, nel cuore di Roma, si fa spazio tra le istituzioni ristorative romane, una nuova realtà gastronomica guidata dallo chef e patron Nicholas Amici. Un ambiente moderno con luci soffuse ed un design tanto minimal quanto confortevole, che accoglie fino ad un massimo di 26 coperti.<br> <br> <br> Bunker nasce con l’idea di accorciare quel divario che separa la ristorazione gourmet dei ristoranti stellati da quella più casual, dove l’indiscutibile qualità del prodotto viene servita in chiave più leggera e divertente. La contaminazione tra ingredienti e differenti tradizioni culinarie abbinata ad un servizio professionale ma al contempo empatico, assicurano un’esperienza unica nel suo genere, così come la cantina che spazia tra piccole realtà vitivinicole anche oltre confine.",
-        "link": "#",
+        "featured":"A pochi passi dalla famigerata Fontana di Trevi, nel cuore di Roma, si fa spazio tra le istituzioni ristorative romane, una nuova realtà gastronomica guidata dallo chef e patron Nicholas Amici. Un ambiente moderno con luci soffuse ed un design tanto minimal quanto confortevole, che accoglie fino ad un massimo di 26 coperti.<br> <br> <br> Bunker nasce con l’idea di accorciare quel divario che separa la ristorazione gourmet dei ristoranti stellati da quella più casual, dove l’indiscutibile qualità del prodotto viene servita in chiave più leggera e divertente. La contaminazione tra ingredienti e differenti tradizioni culinarie abbinata ad un servizio professionale ma al contempo empatico, assicurano un’esperienza unica nel suo genere, così come la cantina che spazia tra piccole realtà vitivinicole anche oltre confine.",
+        "link":"#",
         "header_img": "assets/images/CASE_2_HEADER.jpg",
         "risultati": "Top 50 della guida “I Cento - Roma” edita da EDT Editore<br><br>Puntarella d’oro 2020 per miglior offerta al calice",
         "interventi": [
@@ -41,5 +42,5 @@
             "Affiancamento direttivo"
         ]
     }
-
+    
 ]
