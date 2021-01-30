@@ -1,6 +1,6 @@
 [{
         "etichetta": "ANALISI & PROGETTAZIONE",
-        "titolo": "Analisi, ideazione e progettazione",
+        "titolo": "Analisi, ideazione <br>& progettazione",
         "contenuto": "Per sviluppare un progetto di successo e di tendenza è necessaria un’analisi iniziale del territorio, uno studio delle criticità della struttura<br> e un’indagine di mercato proiettata sulla potenziale clientela e l’identificazione del proprio target. Ci serviamo di dati estrapolati da piattaforme istituzionali per sviluppare assieme al cliente il format più redditizio basato sulle nostre analisi di mercato. Forniamo quindi una proiezione economica sulle reali possibilità di crescita del format ristorativo.",
         "featured": "assets/images/ANALISI.jpg",
         "items": [
@@ -23,7 +23,7 @@
         "etichetta": "FOOD & BEVERAGE",
         "titolo": "Offerta<br> Food & Beverage",
         "featured": "assets/images/FOOD_&_BEVERAGE.jpg",
-        "contenuto": "Concordata la strategia con il cliente, sviluppiamo i menù strutturati secondo<br> un rigido studio dei costi, realizziamo un’analisi dei profitti e settiamo gli<br> standard di in/out di magazzino, ponendo un’attenzione particolare al riciclo delle materie prime utile ad abbattere gli sprechi.",
+        "contenuto": "Concordata la strategia con il cliente, sviluppiamo i menù strutturati secondo un rigido studio dei costi, realizziamo un’analisi dei profitti e settiamo gli standard di in/out di magazzino, ponendo un’attenzione particolare al riciclo delle materie prime utile ad abbattere gli sprechi.",
         "items": [
             "Menù engineering",
             "Pianificazione delle aree di lavoro",
@@ -37,7 +37,7 @@
     },
     {
         "etichetta": "FORMAZIONE & GESTIONE",
-        "titolo": "Formazione<br> e Gestione",
+        "titolo": "Formazione<br> & Gestione",
         "featured": "assets/images/FORMAZIONE_E_GESTIONE.jpg",
         "contenuto": "Ci occupiamo della selezione del personale, della loro formazione e di strutturare procedure di servizio fluide e funzionali. Forniamo inoltre al cliente tutti gli strumenti fondamentali per la gestione in piena autonomia dell’attività.",
         "items": [

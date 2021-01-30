@@ -43,7 +43,7 @@ main.servizi {
       background-color: $secondary;
       display: inline-block;
       position: absolute;
-      left: -30px;
+      left: -35px;
       top: 9px;
     }
   }
@@ -55,6 +55,28 @@ main.servizi {
       transform: translateY(50%);
       max-width: 55%;
     }
+  }
+}
+
+main.home{
+  .carousel.home #circle{
+    position: absolute;
+    left: 60%;
+    transform: translateX(-49%);
+    
+    z-index: 20;
+  }
+  .drugstore{
+    z-index: 10;
+  }
+  .cta{
+    max-width: 190px;
+    text-align: center;
+    padding: 15px 35px;
+  }
+  .special{
+    letter-spacing: 0;
+    line-height: rem(88px);
   }
 }
 

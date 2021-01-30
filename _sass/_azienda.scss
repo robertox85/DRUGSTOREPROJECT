@@ -1,4 +1,15 @@
 main.azienda {
+    h1{
+        letter-spacing: 0;
+        line-height: rem(62px);
+    }
+    h4{
+        
+        letter-spacing: 0;
+        text-align: center;
+        line-height: rem(36px);
+        font-weight: normal;
+    }
     .page__title span {
         color: $secondary;
     }
@@ -107,13 +118,37 @@ main.home {
     }
     .nopadding {
         max-height: 600px;
-        img {
-            object-fit: cover;
-            height: 100%;
-            transition: .3s;
+        &.servizio{
+        
+            img {
+                object-fit: cover;
+                height: 100%;
+                transition: .3s;
+                
+            }
             &:hover {
-                transform: scale(1.1);
+                img{
+                    transform: scale(1.1);
+                }
             }
         }
+        
+    }
+}
+
+.form-group{
+    label{
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 500;
+        font-size: 21px;
+        color: #000000;
+        letter-spacing: 0;
+        text-align: left;
+    }
+    .form-control{
+        min-height: 45px;
+        border: 1px solid #979797;
+        border-radius: 4px;
+        
     }
 }

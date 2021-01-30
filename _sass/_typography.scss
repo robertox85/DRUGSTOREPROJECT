@@ -16,203 +16,124 @@ body {
     color: $primary;
 }
 
-h1 {
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{
     font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 600;
+    letter-spacing: 0;
+} 
+h1,.h1 {
     font-size: rem(62px);
-    color: $primary;
-    letter-spacing: 0;
-    .titolo {
-        font-size: rem(78px);
-        color: #1D1D1D;
-        letter-spacing: rem(-1.86px);
-        line-height: rem(58px);
-    }
-    .sottotitolo {
-        font-size: rem(52px);
-        color: #1D1D1D;
-        letter-spacing: rem(-0.14px);
-        line-height: rem(58px);
-    }
-    &.big {
-        font-size: rem(89px);
-        color: $primary;
+    letter-spacing: rem(5.33px);
+    &.big{
+        font-size: 94px;
+        color: #333333;
         letter-spacing: 0;
-        line-height: 88px;
-    }
-    &.medium {
-        font-weight: 500;
-        line-height: rem(62px);
+        text-align: left;
+        line-height: 78px;
+        font-weight: normal;
     }
 }
 
-h2 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 600;
-    color: $primary;
-    letter-spacing: 0;
+h2,.h2 {
+    font-size: rem(54px);
+    letter-spacing: rem(4.65px);
+}
+
+h3,.h3 {
     font-size: rem(42px);
-    &.hero_text {
-        font-size: rem(94px);
-        color: $primary;
-        letter-spacing: 0;
-        line-height: rem(78px);
-    }
+    letter-spacing: rem(3.61px);
 }
 
-h3 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 400;
+h4,
+.h4 {
     font-size: rem(27px);
-    color: $secondary;
+    letter-spacing: rem(2.32px);
     line-height: rem(36px);
-    &.spaziato {
-        color: $primary_light;
-        letter-spacing: rem(3.2px);
-    }
-    &.sidebar {
-        font-size: rem(33px);
-        letter-spacing: rem(-0.79px);
-        line-height: rem(58px);
-    }
-    &.subtitle {
-        font-size: rem(45px);
-        color: $secondary;
-        line-height: rem(47px);
-    }
-    &.small {
-        font-family: 'Barlow', sans-serif;
-        font-weight: 400;
-        font-size: rem(20px);
-    }
-    &.hero_text {
-        font-weight: 600;
-        color: $standard_superlight;
+    
+    &.big{
+        font-size: rem(31px);
         letter-spacing: 0;
         line-height: rem(36px);
     }
 }
 
-h4,
-.h4 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 400;
-    font-size: rem(28px);
-    color: $secondary_darker;
-    letter-spacing: rem(-0.67px);
-    line-height: rem(70px);
-    &.small {
-        font-size: rem(20px);
-        color: $standard_dark;
-    }
+h5,
+.h5 {
+    font-size: rem(24px);
+    letter-spacing: rem(2.07px);
 }
 
-p {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 400;
-    font-size: rem(16px);
+.nav-item{
+    font-size: rem(14px);
+    letter-spacing: rem(1.2px);
+}
+
+label{
+    font-size: rem(12px);
+    letter-spacing: rem(1.03px);
+}
+.big{
+    font-size: rem(20px);
     color: $primary;
     letter-spacing: 0;
     line-height: rem(26px);
 }
 
-a {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 400;
-    font-size: rem(27px);
-    color: $standard_white;
+p{
+    
+    font-size: rem(16px);
     letter-spacing: 0;
-    line-height: rem(36px);
-    &.small {
-        font-size: rem(19px);
-        color: $secondary_superdark;
-        letter-spacing: -0.45px;
-        line-height: 26px;
-    }
-}
-
-.link {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 400;
-    font-size: rem(13px);
-    color: $standard_white;
-    letter-spacing: 0;
-}
-
-.list-item {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 400;
-    font-size: rem(27px);
-    color: $primary;
-    letter-spacing: 0;
-    line-height: rem(44px);
-}
-
-.number {
-    opacity: 0.31;
-    font-family: 'Barlow', sans-serif;
-    font-weight: 400;
-    font-size: rem(221px);
-    color: $secondary_light;
-    letter-spacing: 0;
-}
-
-.btn {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 400;
-    font-size: rem(27px);
-    color: $primary_black;
-    letter-spacing: rem(5.6px);
-    line-height: rem(44px);
-    background: $secondary;
-    padding: 14px 82px;
-    border-radius: 0;
-    text-transform: uppercase;
-    // width: rem(319px);
-    // height: rem(74px);
-}
-
-.btn-home {
-    font-size: rem(18px);
-    color: #E4E4E4;
-    letter-spacing: rem(5.95px);
-    text-align: left;
-    padding: 5px 20px;
-    max-width: 277px;
-}
-
-.menu-link {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 400;
-    font-size: rem(14px);
-    color: $primary;
-    letter-spacing: rem(0.88px);
-}
-
-.font-weight-semibold {
-    font-weight: 500;
-}
-
-footer {
-    p {
-        font-family: 'Barlow Condensed', sans-serif;
-        font-weight: 400;
+    line-height: rem(26px);
+    
+    &.big{
         font-size: rem(18px);
-        color: $secondary_dark;
         letter-spacing: rem(2.17px);
     }
+    
+}
+.nav-item{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: rem(14px);
+    color: #DDDDDD;
+    letter-spacing: 0.88px;
+    text-align: left;
+}
+a {
+
 }
 
-.line-height-normal {
-    line-height: 1.5;
+button,
+.cta{
+    font-size: rem(27px);
+    letter-spacing: rem(2.32px);
 }
 
-.x-small {
-    font-size: 18px;
-    line-height: 1.5rem;
+.special{
+    font-size: rem(89px);
+    letter-spacing: rem(7.66px);
+
+    
+    &.semi-bold{
+        line-height: rem(88px);
+    }
 }
 
-.display-5 {
-    font-size: 2rem;
-    line-height: 1.2;
+.semi-bold{
+    font-weight: 600!important;
+}
+
+.letter-0{
+    letter-spacing: 0;
+}
+
+.letter-spancin-contatti{
+    letter-spacing: rem(3.2px);
+    line-height:    rem(36px);
+}
+
+.counter.number{
+    opacity: 0.31;
+    font-family: 'Barlow', sans-serif;
+    font-size: 221px;
+    color: #C7BDA4;
+    letter-spacing: 0;
 }

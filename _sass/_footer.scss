@@ -44,4 +44,15 @@ footer{
     .footer-secondary{
         background-image: linear-gradient(180deg, #000000 0%, #303030 100%);
     }
+
+    .cta{
+        max-width: 319px!important;
+        text-transform: uppercase;
+        letter-spacing: rem(5.6px);
+        line-height: rem(44px);
+    }
+    p.big{
+        font-family: 'Barlow Condensed', sans-serif;
+ 
+    }
 }

@@ -15,12 +15,21 @@
     display: flex;
     
     justify-content: center;
-    h3{
+    h4{
         bottom: 50px;
+        z-index: 1;
     }
     &.brand{
         h3{
             color: $primary!important;
         }
     }
+}
+
+.mt-130{
+    margin-top: 130px;
+}
+
+.mb-130{
+    margin-bottom: 130px;
 }

@@ -1,36 +1,34 @@
-<!-- mi servirà per l'active class -->
 {% assign current = page.url | downcase | split: '/' %}
 
-<body data-barba="wrapper">
-    <ul class="transition">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
+<ul class="transition">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
 
 
-    <div class="wrapper">
-        <main data-barba="container" data-barba-namespace="{{page.url | replace: ".html", "" | split: '/'  }}"
-            class="{{page.url | replace: ".html", "" | split: '/'  }} {{page.layout }}">
+<div class="wrapper">
+    <main data-barba="container" data-barba-namespace="{{page.url | replace: ".html", "" | split: '/'  }}"
+        class="{{page.url | replace: ".html", "" | split: '/'  }} {{page.layout }} {{page.slug}}">
 
-            {% include navigazione.html %}
+        {% include navigazione.html %}
 
-            <section class="viewport">
+        <section class="viewport">
 
-                <div id="scroll-container" class="scroll-container">
-
-
-                    <div>
+            <div id="scroll-container" class="scroll-container">
 
 
-                        <!-- featured -->
-                        {% if page.header_img  %}
-                        <div id="carouselId" class="carousel featured" data-ride="carousel">
-                            <div class="carousel-inner" role="listbox">
-                                <div class="carousel-item active" style="background-image:url({{page.header_img}});">
-                                </div>
+                <div>
+
+
+                    <!-- featured -->
+                    {% if page.header_img  %}
+                    <div id="carouselId" class="carousel featured" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active" style="background-image:url({{page.header_img}});">
                             </div>
                         </div>
-                        {% endif %}
+                    </div>
+                    {% endif %}

@@ -67,6 +67,23 @@ $colors: (
     background-image: linear-gradient(180deg, #000000 0%, #4E4E4E 100%);
 }
 .bg__gradient-secondary{
-  background-image: linear-gradient(180deg, #FFFFFF 1%, #D8D8D8 100%);
+  background-image: linear-gradient( 180deg , #FFFFFF 1%, #D8D8D8 100%);
 }
 
+.bg__after{
+  &:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(180deg,  rgba(0,0,0,0.56) 56%, rgba(0,0,0,0.56) 100%);
+    background-size: contain;
+    opacity: .5;
+  }
+}
+
+.bg__gradient-left{
+  background-image: linear-gradient(127deg, #FFFFFF 0%, #D8D8D8 100%);
+}
