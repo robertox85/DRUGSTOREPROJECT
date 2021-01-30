@@ -36,11 +36,32 @@ h1,.h1 {
 h2,.h2 {
     font-size: rem(54px);
     letter-spacing: rem(4.65px);
+    &.sottotitolo{
+        font-weight: 500;
+        font-size: 58px;
+        color: #1D1D1D;
+        letter-spacing: -1.38px;
+        line-height: 46px;
+        span{
+            font-weight: 600;
+            font-size: 39px;
+            color: #1D1D1D;
+            letter-spacing: 0.1px;
+            line-height: 56px;
+        }
+    }
 }
 
 h3,.h3 {
     font-size: rem(42px);
     letter-spacing: rem(3.61px);
+    .small{
+        font-weight: 500;
+        font-size: 39px;
+        color: #1D1D1D;
+        letter-spacing: 0.1px;
+        line-height: 56px;
+    }
 }
 
 h4,
@@ -71,6 +92,7 @@ label{
     font-size: rem(12px);
     letter-spacing: rem(1.03px);
 }
+
 .big{
     font-size: rem(20px);
     color: $primary;
@@ -122,7 +144,11 @@ button,
 }
 
 .letter-0{
-    letter-spacing: 0;
+    letter-spacing: 0!important;
+}
+
+.barlow-condensed{
+    font-family: 'Barlow Condensed', sans-serif!important;
 }
 
 .letter-spancin-contatti{
