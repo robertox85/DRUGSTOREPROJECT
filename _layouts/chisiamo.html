@@ -3,40 +3,44 @@
 {%- include head.html -%}
 
 <!-- body -->
-
+<body data-barba="wrapper">
 {%- include header.html -%}
 
-<div class="container-fluid heading p-top-4 p-bottom-0 left">
-    <div class="container">
-        <div class="row m-bottom-5">
-            <div class="col-md-6 mirko text-right">
-                <img src="{{page.chisiamo1pic}}" class="img-fluid w-100" style="height: 475px; object-fit: cover; object-position: top;" alt="">
-                <h1 class="text-uppercase mt-5">{{page.chisiamo1nome}}</h1>
-                <h4 class="mb-5 text-uppercase color__primary_light font-weight-normal">{{page.chisiamo1ruolo}}</h4>
-                <h3 class="color__secondary letter-0 subtitle font-weight-normal">{{page.chisiamo1ruolo2}}</h3>
-                <p class="m-top-0">{{page.chisiamo1bio}}</p>
+    <div class="container-fluid heading p-top-4 p-bottom-0 left">
+        <div class="container">
+            <div class="row m-bottom-5">
+                <div class="col-md-6 mirko text-right">
+                    <img src="{{page.chisiamo1pic}}" class="img-fluid w-100" style="height: 475px; object-fit: cover; object-position: top;" alt="">
+                    <h1 class="text-uppercase mt-5">{{page.chisiamo1nome}}</h1>
+                    <h4 class="mb-5 text-uppercase color__primary_light font-weight-normal">{{page.chisiamo1ruolo}}</h4>
+                    <h3 class="color__secondary letter-0 subtitle font-weight-normal">{{page.chisiamo1ruolo2}}</h3>
+                    <p class="m-top-0">{{page.chisiamo1bio}}</p>
 
-                <h4 class="color__primary_light letter-spancin-contatti text-uppercase m-top-2">CONTATTI</h4>
-                <a class="color__primary big" href="mailto:{{page.chisiamo1contattiMail}}">{{page.chisiamo1contattiMail}}</a><br>
-                <a class="color__primary big" href="tel:+{{page.chisiamo1contattiTel}}">{{page.chisiamo1contattiTel2}}</a>
+                    <h4 class="color__primary_light letter-spancin-contatti text-uppercase m-top-2">CONTATTI</h4>
+                    <a class="color__primary big" href="mailto:{{page.chisiamo1contattiMail}}">{{page.chisiamo1contattiMail}}</a><br>
+                    <a class="color__primary big" href="tel:+{{page.chisiamo1contattiTel}}">{{page.chisiamo1contattiTel2}}</a>
+                </div>
+                <div class="col-md-6 m-top-1 mt-md-0 guido">
+                    <img src="{{page.chisiamo2pic}}" class="img-fluid w-100"
+                        style="height: 475px; object-fit: cover; object-position: top;" alt="">
+                    <h1 class="text-uppercase mt-5">{{page.chisiamo2nome}}</h1>
+                    <h4 class="mb-5 text-uppercase color__primary_light font-weight-normal">{{page.chisiamo2ruolo}}</h4>
+                    <h3 class="color__secondary letter-0 subtitle font-weight-normal">{{page.chisiamo2ruolo2}}</h3>
+                    <p class="m-top-0">{{page.chisiamo2bio}}</p>
+
+                    <h4 class="color__primary_light letter-spancin-contatti text-uppercase m-top-2">CONTATTI</h4>
+                    <a class="color__primary big" href="mailto:{{page.chisiamo2contattiMail}}">{{page.chisiamo2contattiMail}}</a><br>
+                    <a class="color__primary big" href="tel:+{{page.chisiamo2contattiTel}}">{{page.chisiamo2contattiTel2}}</a>
+                    
+
+                </div>
+
             </div>
-            <div class="col-md-6 m-top-1 mt-md-0 guido">
-                <img src="{{page.chisiamo2pic}}" class="img-fluid w-100"
-                    style="height: 475px; object-fit: cover; object-position: top;" alt="">
-                <h1 class="text-uppercase mt-5">{{page.chisiamo2nome}}</h1>
-                <h4 class="mb-5 text-uppercase color__primary_light font-weight-normal">{{page.chisiamo2ruolo}}</h4>
-                <h3 class="color__secondary letter-0 subtitle font-weight-normal">{{page.chisiamo2ruolo2}}</h3>
-                <p class="m-top-0">{{page.chisiamo2bio}}</p>
-
-                <h4 class="color__primary_light letter-spancin-contatti text-uppercase m-top-2">CONTATTI</h4>
-                <a class="color__primary big" href="mailto:{{page.chisiamo2contattiMail}}">{{page.chisiamo2contattiMail}}</a><br>
-                <a class="color__primary big" href="tel:+{{page.chisiamo2contattiTel}}">{{page.chisiamo2contattiTel2}}</a>
-                
-
-            </div>
-
         </div>
     </div>
-</div>
 
 {% include footer.html %}
+
+</body>
+
+</html>
