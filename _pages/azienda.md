@@ -1,6 +1,6 @@
 ---
 layout: azienda
-title: "Ambiziosi, carismatici, concreti, cosmopoliti <br>ma <span>orgogliosamente made in Italy.</span>"
+title: "Ambiziosi, carismatici, concreti, cosmopoliti <br>e <span>orgogliosamente made in Italy.</span>"
 # immagine di copertina
 header_img: "assets/images/header_azienda.png"
 # titolo
