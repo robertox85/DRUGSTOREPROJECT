@@ -1,10 +1,9 @@
 main.azienda {
-    h1{
+    h1 {
         letter-spacing: 0;
         line-height: rem(62px);
     }
-    h4{
-        
+    h4 {
         letter-spacing: 0;
         text-align: center;
         line-height: rem(36px);
@@ -65,7 +64,7 @@ main.servizi {
     #data-contenuto {
         display: block;
         max-width: 80%;
-        &+.text__first-bg {
+        & + .text__first-bg {
             width: 90%;
         }
     }
@@ -84,7 +83,17 @@ main.servizi {
     .carousel-caption {
         flex-direction: column;
         justify-content: center;
-        bottom: 120px;
+        @media (min-width: 960px) {
+            bottom: 120px;
+        }
+        @media (max-width: 960px) {
+            right: 5%;
+            left: 5%;
+            h1 {
+                line-height: 3.5rem;
+                font-size: 3.5625rem;
+            }
+        }
     }
     #circle {
         position: absolute;
@@ -118,37 +127,52 @@ main.home {
     }
     .nopadding {
         max-height: 600px;
-        &.servizio{
-        
+        &.servizio {
             img {
                 object-fit: cover;
                 height: 100%;
-                transition: .3s;
-                
+                transition: 0.3s;
             }
             &:hover {
-                img{
+                img {
                     transform: scale(1.1);
                 }
             }
         }
-        
     }
 }
 
-.form-group{
-    label{
-        font-family: 'Barlow Condensed', sans-serif;
+.form-group {
+    label {
+        font-family: "Barlow Condensed", sans-serif;
         font-weight: 500;
         font-size: 21px;
         color: #000000;
         letter-spacing: 0;
         text-align: left;
     }
-    .form-control{
+    .form-control {
         min-height: 45px;
         border: 1px solid #979797;
         border-radius: 4px;
-        
+    }
+}
+
+@media (max-width: 960px) {
+    .nav-servizi {
+        display: block;
+    }
+    main.servizi .featured .carousel-item {
+        background-size: 100%;
+    }
+    .text__first.position-absolute{
+        position: relative!important;
+    }
+    .p-left-3,
+    .p-left-4 {
+        padding-left: 0;
+    }
+    .p-right-4 {
+        padding-right: 0;
     }
 }

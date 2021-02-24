@@ -184,11 +184,13 @@ function contentAnimation() {
   
 
 }
+
 function resetScroll(){
   window.scrollTo(0, 0);
   console.log('ciao');
 
 }
+
 function leaveAnimation() {}
 
 

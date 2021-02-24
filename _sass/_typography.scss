@@ -23,6 +23,10 @@ h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{
 h1,.h1 {
     font-size: rem(62px);
     letter-spacing: rem(5.33px);
+    @media (max-width: 792px) {
+        font-size: rem(31px);
+        letter-spacing: rem(2.5px);
+    }
     &.big{
         font-size: 94px;
         color: #333333;

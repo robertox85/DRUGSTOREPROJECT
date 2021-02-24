@@ -9,13 +9,13 @@
 
     {% include header.html %}
 
-    <div id="carouselId" class="carousel slide featured home" data-ride="carousel">
+    <div id="carouselId" class="carousel slide featured home " data-ride="carousel">
 
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-                <div class="carousel-caption d-none d-md-flex text-left">
+                <div class="carousel-caption text-left">
 
-                    <svg id="circle" width="526px" height="526px" viewBox="0 0 526 526" version="1.1"
+                    <svg class="d-none d-md-inline-block" id="circle" width="526px" height="526px" viewBox="0 0 526 526" version="1.1"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
                         <circle id="Oval" cx="262" cy="262" r="262" stroke="#979797"></circle>
@@ -23,7 +23,7 @@
                     </svg>
 
 
-                    <svg id="rectangle" width="482px" height="336px" viewBox="0 0 482 336" version="1.1"
+                    <svg class="d-none d-md-inline-block" id="rectangle" width="482px" height="336px" viewBox="0 0 482 336" version="1.1"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect id="rect" x="0" y="0" width="482" height="336" fill="#CCC5B0"></rect>
 
@@ -66,8 +66,8 @@
 
                 </div>
                 
-                <div class="col-3 offset-7 drugstore">
-                    <img src="assets/images/drugstore-logo.png" alt="">
+                <div class="col-3 offset-7 drugstore d-none d-md-inline-block" >
+                    <img src="assets/images/drugstore-logo.png" alt="" class="img-fluid">
                 </div>
 
             </div>
@@ -139,12 +139,6 @@
                 </div>
                 <div class="col-12 m-bottom-2">
                     <h1>Realizziamo progetti su misura<br> dando vita a format vincenti ed unici nel loro genere</h1>
-    
-    
-    
-    
-    
-    
                 </div>
                 <div class="col-md-4">
                     <img src="assets/images/startup.png" alt="">
@@ -179,7 +173,7 @@
     </div>
     
     
-    <div class="container-fluid p-top-2 p-bottom-4">
+    <div class="container-fluid p-top-2 p-bottom-4 px-md-3 px-0">
         <div class="container">
             <div class="row text-center overflow-hidden">
                 <div class="col-12 mt-130"><h1 class="semi-bold">I nostri Servizi</h1></div>
@@ -202,7 +196,7 @@
                 <h4 class="pb-5 color__primary  text-uppercase big semi-bold">Ci hanno scelto</h4>
             </div>
             <div class="col-12 text-center mx-auto">
-                <img src="assets/images/scelto.png" alt="">
+                <img class="img-fluid" src="assets/images/scelto.png" alt="">
             </div>
             
         </div>
