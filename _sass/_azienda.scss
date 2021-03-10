@@ -24,6 +24,14 @@ main.azienda {
 
 main.home,
 main.servizi {
+    @media screen and (max-width: 992px) {
+        .big.m-bottom-1 {
+            margin-bottom: 20px !important;
+        }
+        .p-top-4.p-bottom-4.p-left-3.p-right-0 {
+            padding-top: 60px;
+        }
+    }
     #data-box_title {
         background-color: #333;
         width: auto;
@@ -64,6 +72,13 @@ main.servizi {
     #data-contenuto {
         display: block;
         max-width: 80%;
+
+        font-family: "Barlow";
+        font-size: 20px;
+        color: #333333;
+        letter-spacing: 0;
+        line-height: 26px;
+
         & + .text__first-bg {
             width: 90%;
         }
@@ -158,6 +173,50 @@ main.home {
     }
 }
 
+@media screen and (max-width: 992px) {
+    .navbar {
+        padding: 0;
+        .navbar-brand {
+            margin-left: 10px;
+        }
+        .navbar-toggler {
+            margin-right: 10px;
+        }
+        .navbar-nav {
+            background-color: #000;
+            padding: 0 10px;
+        }
+    }
+    footer {
+        h2 {
+            font-size: 23px;
+            color: #f5f5f5;
+            letter-spacing: 0;
+            text-align: left;
+            line-height: 28px;
+            padding-top: 30px !important;
+            width: 60%;
+        }
+        h3 {
+            font-size: 18px;
+            color: #ccc5b0;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 16px;
+        }
+        h4 {
+            font-size: 14px;
+            color: #ccc5b0;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 16px;
+            width: 36%;
+            margin: 0 auto;
+            margin-top: 5px;
+        }
+    }
+}
+
 @media (max-width: 960px) {
     .nav-servizi {
         display: block;
@@ -165,8 +224,8 @@ main.home {
     main.servizi .featured .carousel-item {
         background-size: 100%;
     }
-    .text__first.position-absolute{
-        position: relative!important;
+    .text__first.position-absolute {
+        position: relative !important;
     }
     .p-left-3,
     .p-left-4 {

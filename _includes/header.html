@@ -22,13 +22,21 @@
 
                 <div>
 
-
+                    
                     <!-- featured -->
                     {% if page.header_img  %}
                     <div id="carouselId" class="carousel featured" data-ride="carousel">
                         <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active" style="background-image:url({{page.header_img}});">
-                            </div>
+                            
+                            <div class="carousel-item active d-none d-md-block" style="background-image:url({{page.header_img}});"></div>
+
+                            {% if page.slug != 'servizi' %}
+                                <div class="d-flex d-md-none carousel-item active" style="background-image:url({{page.header_img}});"></div>
+                            {% else %}
+                                <div class="d-flex d-md-none carousel-item active my-0 pl-3"><h3>SERVIZI</h3></div>        
+                            {% endif %}
+
+
                         </div>
                     </div>
                     {% endif %}

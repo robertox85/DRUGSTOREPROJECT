@@ -1,7 +1,9 @@
 body {
   overflow-x: hidden;
 }
-
+.carousel {
+  padding-top: 103px;
+}
 .featured {
   .carousel-item {
     min-height: 600px;
@@ -23,20 +25,71 @@ main.servizi {
     margin-top: 110px;
     margin-bottom: 80px;
   }
+  #lista-servizi {
+    @media screen and (min-width: 992px) {
+      background-color: rgba($color: #d8d8d8, $alpha: 0.43);
+    }
+  }
+  .nav-servizi {
+    padding: 24px 0;
+  }
+  .nav-servizi li {
+    @media screen and (max-width: 992px) {
+      
+      &:nth-child(2n-2){
+        &:before {
+          content: "";
+          background-color: rgba($color: #d8d8d8, $alpha: 0.43);
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+        }
+        
+      }
+
+      a{
+        padding-left: 10px!important;
+      }
+    }
+  }
   .nav-servizi li a {
-    background-color: rgba($color: #d8d8d8, $alpha: 0.43);
     color: $primary;
     text-transform: uppercase;
-    padding: 14px 50px;
+    padding: 0;
+
+    font-family: "Barlow", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #3e3e3e;
+    letter-spacing: 0;
+    text-align: center;
+    @media screen and (max-width: 992px) {
+      text-align: left;
+    }
   }
+
   .nav-servizi li a.active {
     background: $secondary;
     color: $standard_white;
   }
+  .dettaglio-servizi{
+    @media screen and (max-width: 992px){
+      margin-top: 60px;
+      margin-bottom: 100px;
+      margin-left: 30px;
+    }
+  }
   .dettaglio-servizi li {
     position: relative;
+    margin-bottom: 20px;
+    h5 {
+      font-weight: normal;
+    }
     &::before {
-      content: '';
+      content: "";
       width: 23px;
       height: 23px;
       border-radius: 100px;
@@ -44,7 +97,7 @@ main.servizi {
       display: inline-block;
       position: absolute;
       left: -35px;
-      top: 9px;
+      top: 3px;
     }
   }
 
@@ -58,23 +111,23 @@ main.servizi {
   }
 }
 
-main.home{
-  .carousel.home #circle{
+main.home {
+  .carousel.home #circle {
     position: absolute;
     left: 60%;
     transform: translateX(-49%);
-    
+
     z-index: 20;
   }
-  .drugstore{
+  .drugstore {
     z-index: 10;
   }
-  .cta{
+  .cta {
     max-width: 190px;
     text-align: center;
     padding: 15px 35px;
   }
-  .special{
+  .special {
     letter-spacing: 0;
     line-height: rem(88px);
   }
@@ -103,11 +156,10 @@ ul.transition li {
 }
 
 .case-history {
-
-  .featured .carousel-item{
+  .featured .carousel-item {
     min-height: 900px;
   }
-  .cover{
+  .cover {
     position: absolute;
   }
 
@@ -116,14 +168,12 @@ ul.transition li {
     height: 100%;
     background: #fff;
   }
-  @media screen and (min-width:992px) {
-    .risultati{
+  @media screen and (min-width: 992px) {
+    .risultati {
       top: -100px;
     }
   }
-  
 }
-
 
 @keyframes offset {
   from {

@@ -8,10 +8,10 @@
     {%- include header.html -%}
 
     <div class="heading ">
-        <div class="container-fluid  mx-auto">
+        <div id="lista-servizi" class="container-fluid  mx-auto">
             <div class="row">
 
-                <div class="col-12">
+                <div class="col-12 col-md-10 mx-auto">
 
                     <ul class="pl-0 mb-0 row list-unstyled nav-servizi">
 
@@ -69,8 +69,8 @@
 
         <div class="container-fluid" style='min-height: 900px; background-image: url({{page.bg}});background-size: cover;'>
             <div class="container">
-                <div class="row p-top-4">
-                    <h1 class="text col-12 m-bottom-2 position-relative">
+                <div class="row pt-md-120">
+                    <h1 class="text col-12 position-relative letter-0">
                         <span class="text__first">
                             <span class="text__word" id="data-titolo">{{site.data.servizi[0].titolo}}</span>
                             <span class="text__first-bg data-titolo"></span>
@@ -78,7 +78,7 @@
                     </h1>
 
 
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 mt-md-120">
 
                         <p class="color__primary position-relative">
                             <span class="text__first position-absolute">
@@ -103,7 +103,7 @@
                                     <ul class="list-unstyled dettaglio-servizi text__word" id="data-lista">
                                         {%- for item in site.data.servizi[0].items -%}
                                         <li>
-                                            <h5 class="color__primary">
+                                            <h5 class="color__primary letter-0">
                                                 {{item}}
                                             </h5>
                                         </li>
@@ -165,8 +165,8 @@
                 <div class="col-lg-6 bg__primary"
                     style="background-image:url(assets/images/RISANAMENTO_BACKGROUND.jpg);background-size:cover;background-position:center">
                     <div class="p-top-4 p-bottom-4 p-left-3 p-right-0">
-                        <h1 class="color__standard_white font-weight-normal">Compravendita, risanamento<br> e
-                            Contabilità</h1>
+                        <h3 class="color__standard_white font-weight-normal">Compravendita, risanamento<br> e
+                            Contabilità</h3><br>
                         <p class="color__standard_white ">
                             Tramite la nostra rete di agenti immobiliari e legali possiamo agevolare il cliente nel
                             processo di acquisto o vendita di aziende già esistenti ed operanti. Inoltre grazie agli
