@@ -180,7 +180,7 @@
                 {%- for servizio in site.data.servizi -%}
                 <div class="col-md-4 nopadding position-relative overflow-hidden servizio {{servizio.titolo | downcase | split : " " | first | replace: ", ", " " | replace: "<br>", ""}}">
                     <a href="servizi.html?servizio={{forloop.index}}" class="w-100 text-center overflow-hidden bg__after">
-                        <img class="img-fluid w-100" src="{{servizio.featured}}" alt="">
+                        <img class="img-fluid w-100" src="{{servizio.featured}}" alt="" style="min-height: 740px; object-fit: cover;">
                         <h4 class="color__standard_white position-absolute w-100 text-uppercase">{{servizio.titolo}}</h4>
                     </a>
                 </div>
