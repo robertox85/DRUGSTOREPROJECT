@@ -176,7 +176,7 @@
     <div class="container-fluid p-top-2 p-bottom-4 px-md-3 px-0">
         <div class="container">
             <div class="row text-center overflow-hidden">
-                <div class="col-12 mt-130"><h1 class="semi-bold">I nostri Servizi</h1></div>
+                <div class="col-12 mt-130"><h1 class="semi-bold letter-0">I nostri Servizi</h1></div>
                 {%- for servizio in site.data.servizi -%}
                 <div class="col-md-4 nopadding position-relative overflow-hidden servizio {{servizio.titolo | downcase | split : " " | first | replace: ", ", " " | replace: "<br>", ""}}">
                     <a href="servizi.html?servizio={{forloop.index}}" class="w-100 text-center overflow-hidden bg__after">
