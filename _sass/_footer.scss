@@ -24,6 +24,13 @@ footer{
             color: $standard_white;
             letter-spacing: 0;
             line-height: 36px;
+
+            @media screen and (max-width:960px){
+                font-size: 19px;
+                color: #FFFFFF;
+                letter-spacing: 0;
+                line-height: 36px;
+            }
             
         }
     }
