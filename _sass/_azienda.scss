@@ -38,6 +38,20 @@ main.azienda {
             // padding: 0 45px;
             
         }
+        
+        #azienda-desc{
+            padding: 0;
+            .h4-desktop{
+                display: none!important;
+            }
+            h4.h4-mobile{
+                display: block!important;
+                font-size: 21px;
+                line-height: normal;
+                margin-bottom: 65px;
+                
+            }
+        } 
     }
 
 }
