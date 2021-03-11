@@ -21,13 +21,22 @@ main.azienda {
         }
     }
     @media (max-width: 960px) {
+        .heading{
+            &.p-top-4{
+                padding-top: 35px;
+            }
+            &.p-bottom-3{
+                padding-bottom: 35px;
+            }
+        } 
         h1{
-            font-size: 22px;
+            font-size: 35px;
             color: #333333;
             letter-spacing: 0;
             text-align: center;
-            line-height: 22px;
-            padding: 0 45px;
+            line-height: normal;
+            // padding: 0 45px;
+            
         }
     }
 
