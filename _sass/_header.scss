@@ -15,12 +15,27 @@ main.default {
       padding-right: 0;
       
     }
+    .p-bottom-4{
+      padding-bottom: 0;
+    }
+    .container-fluid.p-top-2.p-bottom-3.bg__gradient-left{
+      padding-top: 30px;
+    }
     .bg__gradient-secondary{
       h1{
         font-size: 31px;
         line-height: 37px;
         letter-spacing: -1px!important;
         font-weight: bold;
+      }
+    }
+
+    .mt-130{
+      margin: 0;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      h1{
+        text-align: center;
       }
     }
     
