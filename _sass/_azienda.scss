@@ -217,6 +217,16 @@ main.home {
             margin: 0 auto;
             margin-top: 5px;
         }
+        @media (max-width: 960px) {
+            h3{
+                font-size: 21px;
+            }
+            h4{
+                font-size: 18px;
+                line-height: normal;
+                width: 55%;
+            }
+        }
     }
 }
 
