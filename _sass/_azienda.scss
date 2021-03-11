@@ -21,7 +21,14 @@ main.azienda {
         }
     }
     @media (max-width: 960px) {
-
+        h1{
+            font-size: 22px;
+            color: #333333;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 22px;
+            padding: 0 45px;
+        }
     }
 
 }
