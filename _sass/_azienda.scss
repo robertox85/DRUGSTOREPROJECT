@@ -84,7 +84,21 @@ main.azienda {
     }
 
 }
-
+main.case-history{
+    @media (max-width: 960px) {
+        .carousel-item.active{
+            background-image: unset!important;
+            
+        }
+        img{
+            display: block!important;
+            min-height: 50%;
+            object-fit: cover;
+            object-position: right;
+            margin-top: 100%;
+        }
+    }
+}
 main.home,
 main.servizi {
     @media screen and (max-width: 992px) {
