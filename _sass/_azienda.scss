@@ -17,6 +17,14 @@ main.azienda {
     }
     .etica {
         h4 {
+            font-size: 20px;
+            font-weight: 500;
+            span{
+                font-size: 23px;
+                text-decoration: underline;
+                font-weight: normal;
+            }
+            
             line-height: normal;
         }
     }
