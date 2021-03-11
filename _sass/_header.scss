@@ -4,12 +4,21 @@ body {
 .carousel {
   padding-top: 103px;
 }
-main.default{
-  .p-top-2 {
-    @media (max-width: 960px) {
+main.default {
+  @media (max-width: 960px) {
+    .p-top-2 {
       padding-top: 0;
     }
-    
+    .m-bottom-2 {
+      margin-bottom: 1.6875rem;
+      padding-left: 0rem;
+      padding-right: 0;
+      letter-spacing: -1px!important;
+    }
+    h1{
+      font-size: 33px;
+      line-height: 37px;
+    }
   }
 }
 .featured {
@@ -18,7 +27,6 @@ main.default{
     @media (min-width: 960px) {
       min-height: 600px;
     }
-    
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,8 +55,7 @@ main.servizi {
   }
   .nav-servizi li {
     @media screen and (max-width: 992px) {
-      
-      &:nth-child(2n-2){
+      &:nth-child(2n-2) {
         &:before {
           content: "";
           background-color: rgba($color: #d8d8d8, $alpha: 0.43);
@@ -59,11 +66,10 @@ main.servizi {
           bottom: 0;
           width: 100%;
         }
-        
       }
 
-      a{
-        padding-left: 10px!important;
+      a {
+        padding-left: 10px !important;
       }
     }
   }
@@ -87,8 +93,8 @@ main.servizi {
     background: $secondary;
     color: $standard_white;
   }
-  .dettaglio-servizi{
-    @media screen and (max-width: 992px){
+  .dettaglio-servizi {
+    @media screen and (max-width: 992px) {
       margin-top: 60px;
       margin-bottom: 100px;
       margin-left: 30px;
