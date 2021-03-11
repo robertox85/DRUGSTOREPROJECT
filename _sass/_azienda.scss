@@ -93,7 +93,10 @@ main.servizi {
 
 .carousel.home {
     .carousel-item {
-        min-height: 650px;
+        @media (min-width: 960px) {
+            min-height: 650px;
+        }
+        
     }
     .carousel-caption {
         flex-direction: column;

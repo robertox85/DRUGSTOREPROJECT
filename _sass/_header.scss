@@ -4,9 +4,21 @@ body {
 .carousel {
   padding-top: 103px;
 }
+main.default{
+  .p-top-2 {
+    @media (max-width: 960px) {
+      padding-top: 0;
+    }
+    
+  }
+}
 .featured {
   .carousel-item {
-    min-height: 600px;
+    height: 400px;
+    @media (min-width: 960px) {
+      min-height: 600px;
+    }
+    
 
     background-repeat: no-repeat;
     background-size: cover;
