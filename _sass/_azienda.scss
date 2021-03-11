@@ -85,17 +85,28 @@ main.azienda {
 
 }
 main.case-history{
+    .featured .carousel-item{
+        height: unset;
+    }
     @media (max-width: 960px) {
         .carousel-item.active{
             background-image: unset!important;
             
         }
-        img{
+        img.head{
             display: block!important;
-            min-height: 50%;
+            min-height: 450px;
             object-fit: cover;
             object-position: right;
-            margin-top: 100%;
+            &:first-of-type{
+                // margin-top: 100%; 
+            }
+            // margin-top: 100%;
+        }
+        .risultati{
+            h4{
+                padding-left: 0;
+            }
         }
     }
 }
