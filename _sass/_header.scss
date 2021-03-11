@@ -15,12 +15,15 @@ main.default {
       padding-right: 0;
       
     }
-    h1{
-      font-size: 31px;
-      line-height: 37px;
-      letter-spacing: -1px!important;
-      font-weight: bold;
+    .bg__gradient-secondary{
+      h1{
+        font-size: 31px;
+        line-height: 37px;
+        letter-spacing: -1px!important;
+        font-weight: bold;
+      }
     }
+    
   }
 }
 .featured {
