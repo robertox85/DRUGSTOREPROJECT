@@ -20,6 +20,10 @@ main.azienda {
             line-height: normal;
         }
     }
+    @media (max-width: 960px) {
+
+    }
+
 }
 
 main.home,
@@ -223,8 +227,9 @@ main.home {
             }
             h4{
                 font-size: 18px;
-                line-height: normal;
+                line-height: normal!important;
                 width: 55%;
+
             }
         }
     }
