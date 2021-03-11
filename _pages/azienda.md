@@ -64,7 +64,7 @@ eticalist:
         desc : "Onestà e trasparenza sono i principi con i quali gestiamo i rapporti con i nostri<br> clienti, i fornitori e con le aziende nostre partner."
 
 # immagine pre-footer
-prefooter: "assets/images/DP_PREFOOTER.jpg"
+prefooter: "assets/images/azienda.png"
 permalink: /azienda.html
 ---
 
