@@ -41,18 +41,18 @@ document.addEventListener(
 
 function renderText(data) {
   var tl = gsap.timeline();
-  if(data.counter != 01){
-      
+  if (data.counter != 01) {
 
-      tl.to("#box", {
-        duration: 0.5,
-        scaleX: 1,
-        opacity: 0,
-        ease: Power2.easeInOut,
-        stagger: 0.1,
-      });
-    
-  }else{
+
+    tl.to("#box", {
+      duration: 0.5,
+      scaleX: 1,
+      opacity: 0,
+      ease: Power2.easeInOut,
+      stagger: 0.1,
+    });
+
+  } else {
     tl.to("#box", {
       duration: 0.5,
       scaleX: 1,
@@ -74,22 +74,22 @@ function renderText(data) {
     box_title: data.box_title,
     items: data.items.split(";"),
   };
-  
-  
+
+
 
   var renderedTitolo = Mustache.render(titolo, { titolo: data.titolo });
   var renderedContenuto = Mustache.render(contenuto, {
     contenuto: data.contenuto,
   });
 
-  
-  
-  
+
+
+
   var renderedLista = Mustache.render(lista, { items: data.items.split(";") });
   var renderedCounter = Mustache.render(counter, { counter: data.counter });
 
-  
-  
+
+
 
 
   document.getElementById("data-titolo").innerHTML = renderedTitolo;
@@ -98,16 +98,16 @@ function renderText(data) {
   document.getElementById("data-counter").innerHTML = renderedCounter;
   document.getElementById("data-box_title").innerHTML = json['box_title'];
   document.getElementById("data-box_items").innerHTML = json['box_items'];
-  
-  
-  
+
+
+
 
 }
 
 function contentAnimation() {
-  
-  
-  
+
+
+
   var tl4 = gsap.timeline();
   tl4
     .to(".text__first-bg", 0.5, {
@@ -178,23 +178,23 @@ function contentAnimation() {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const servizio = urlParams.get('servizio')
-  if(servizio != null){
-    const link = document.querySelectorAll("[data-index='"+servizio+"']");
+  if (servizio != null) {
+    const link = document.querySelectorAll("[data-index='" + servizio + "']");
     link[0].children[0].click()
   }
 
-  
-  
+
+
 
 }
 
-function resetScroll(){
+function resetScroll() {
   window.scrollTo(0, 0);
   console.log('ciao');
 
 }
 
-function leaveAnimation() {}
+function leaveAnimation() { }
 
 
 
@@ -207,31 +207,79 @@ function delay(n) {
   });
 }
 
-barba.init({
-  sync: true,
-  transitions: [
-    {
-      async leave(data) {
-        const done = this.async();
+if (window.innerWidth > 960) {
 
-        // leaveAnimation();
-        pageTransition();
-
-        await delay(1200);
-        done();
+  barba.init({
+    sync: true,
+    transitions: [
+      {
+        async leave(data) {
+          const done = this.async();
+  
+          // leaveAnimation();
+          pageTransition();
+  
+          await delay(1200);
+  
+          done();
+        },
+  
+        async enter(data) {
+          contentAnimation();
+          resetScroll();
+        },
+  
+        async once(data) {
+          contentAnimation();
+        },
       },
+    ],
+  });
 
-      async enter(data) {
-        contentAnimation();
-        resetScroll();
-      },
+}
 
-      async once(data) {
-        contentAnimation();
+
+if (window.innerWidth < 960) {
+
+  if(document.querySelector('.navbar-brand')){
+    document.querySelector('.navbar-brand').addEventListener('click',function(e){
+      e.stopPropagation();
+      // window.location.href  = 'index.html';
+    });
+  }
+  
+  if(document.querySelector('.cta.bg__primary')){
+    document.querySelector('.cta.bg__primary').addEventListener('click',function(e){
+      e.stopPropagation();
+      // window.location.href  = 'index.html';
+    });
+  }
+  
+  barba.init({
+    sync: true,
+    transitions: [
+      {
+        async leave(data) {
+          const done = this.async();
+  
+         
+  
+          done();
+        },
+  
+        async enter(data) {
+          contentAnimation();
+          resetScroll();
+        },
+  
+        async once(data) {
+          contentAnimation();
+        },
       },
-    },
-  ],
-});
+    ],
+  });
+  
+}
 
 
 AOS.init();
