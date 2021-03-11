@@ -41,6 +41,7 @@ main.default {
     
   }
 }
+
 .featured {
   .carousel-item {
     height: 400px;
@@ -57,7 +58,19 @@ main.default {
     justify-content: center;
   }
 }
-
+main.servizi{
+  .featured {
+    .carousel-item {
+      height: auto;
+    }
+  }
+  @media screen and (max-width: 960px) {
+    .counter.number{
+      display: none;
+    }
+  }
+  
+}
 main.servizi {
   .featured .carousel-item {
     background-size: inherit;

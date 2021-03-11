@@ -87,14 +87,17 @@ function renderText(data) {
   
   var renderedLista = Mustache.render(lista, { items: data.items.split(";") });
   var renderedCounter = Mustache.render(counter, { counter: data.counter });
+
   
   
+
 
   document.getElementById("data-titolo").innerHTML = renderedTitolo;
   document.getElementById("data-contenuto").innerHTML = renderedContenuto;
   document.getElementById("data-lista").innerHTML = renderedLista;
   document.getElementById("data-counter").innerHTML = renderedCounter;
-  
+  document.getElementById("data-box_title").innerHTML = json['box_title'];
+  document.getElementById("data-box_items").innerHTML = json['box_items'];
   
   
   
