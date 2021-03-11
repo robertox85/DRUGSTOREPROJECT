@@ -112,8 +112,8 @@ main.servizi {
     }
     #circle {
         position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 60%;
+        transform: translateX(-60%) translateY(-20%);
         circle {
             stroke-width: 1px;
             fill: none;
