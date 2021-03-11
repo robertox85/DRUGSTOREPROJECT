@@ -110,6 +110,17 @@ main.case-history{
         }
     }
 }
+main.contatti{
+    .container-fluid.p-top-4{
+        margin-top: 100px;
+    }
+    @media (max-width: 960px) {
+        .m-top-4{
+            margin-top: 1.8125rem;
+        }
+    }
+    
+}
 main.home,
 main.servizi {
     @media screen and (max-width: 992px) {
