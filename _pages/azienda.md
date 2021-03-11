@@ -23,7 +23,7 @@ acquisendo una forte <b>consapevolezza</b> delle<br>difficoltà ma soprattutto d
 
 card2title: "UN SERVIZIO CHE SI PAGA<br>AUTONOMAMENTE"
 card2desc: "<b>Riduciamo al minimo gli investimenti contenendo i costi</b> di avviamento e quelli di<br>
-gestione. <b>Ottimizziamo i margini i guadagno garantendo la massima produttività</b><br>
+gestione. <br> <b>Ottimizziamo i margini i guadagno garantendo la massima produttività</b><br>
 delle risorse messe a disposizione.<br>
 Progettiamo un’attività economicamente<br>
 sostenibile e che sia proficua nel tempo<br>
