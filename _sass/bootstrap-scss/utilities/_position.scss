@@ -14,8 +14,11 @@
   left: 0;
   z-index: $zindex-fixed;
   height: 103px;
+  width: 100%;
 }
-
+.wrapper{
+  overflow-x: hidden;
+}
 .fixed-bottom {
   position: fixed;
   right: 0;

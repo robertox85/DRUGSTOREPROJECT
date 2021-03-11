@@ -178,6 +178,7 @@ function contentAnimation() {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const servizio = urlParams.get('servizio')
+  
   if (servizio != null) {
     const link = document.querySelectorAll("[data-index='" + servizio + "']");
     link[0].children[0].click()
@@ -190,8 +191,6 @@ function contentAnimation() {
 
 function resetScroll() {
   window.scrollTo(0, 0);
-  console.log('ciao');
-
 }
 
 function leaveAnimation() { }
@@ -215,20 +214,20 @@ if (window.innerWidth > 960) {
       {
         async leave(data) {
           const done = this.async();
-  
+
           // leaveAnimation();
           pageTransition();
-  
+
           await delay(1200);
-  
+
           done();
         },
-  
+
         async enter(data) {
           contentAnimation();
           resetScroll();
         },
-  
+
         async once(data) {
           contentAnimation();
         },
@@ -241,44 +240,47 @@ if (window.innerWidth > 960) {
 
 if (window.innerWidth < 960) {
 
-  if(document.querySelector('.navbar-brand')){
-    document.querySelector('.navbar-brand').addEventListener('click',function(e){
+  if (document.querySelector('.navbar-brand')) {
+    document.querySelector('.navbar-brand').addEventListener('click', function (e) {
       e.stopPropagation();
       // window.location.href  = 'index.html';
     });
   }
-  
-  if(document.querySelector('.cta.bg__primary')){
-    document.querySelector('.cta.bg__primary').addEventListener('click',function(e){
+
+  if (document.querySelector('.cta.bg__primary')) {
+    document.querySelector('.cta.bg__primary').addEventListener('click', function (e) {
       e.stopPropagation();
       // window.location.href  = 'index.html';
     });
   }
-  
+
   barba.init({
-    sync: true,
+    sync: false,
     transitions: [
       {
-        async leave(data) {
-          const done = this.async();
-  
-         
-  
-          done();
-        },
-  
+        //   async leave(data) {
+        //     // const done = this.async();
+        //     // done();
+        // },
+
         async enter(data) {
-          contentAnimation();
-          resetScroll();
+          setTimeout(() => {
+            contentAnimation();
+            resetScroll();
+          }, 500);
+          
         },
-  
+
         async once(data) {
-          contentAnimation();
+          setTimeout(() => {
+            contentAnimation();
+          }, 500);
+        
         },
       },
     ],
   });
-  
+
 }
 
 
