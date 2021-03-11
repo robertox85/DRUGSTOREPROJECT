@@ -98,6 +98,7 @@ main.servizi {
           right: 0;
           bottom: 0;
           width: 100%;
+          z-index: -1;
         }
       }
 
@@ -119,7 +120,7 @@ main.servizi {
     text-align: center;
     @media screen and (max-width: 992px) {
       text-align: left;
-      padding: 20px 0px;
+      padding: 10px 0px;
     }
   }
 
