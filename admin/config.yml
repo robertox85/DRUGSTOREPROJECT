@@ -15,8 +15,7 @@ collections:
     files:
       - label: "Azienda"
         name: "settings"
-        file: "_data/azienda.yml"
-        slug: "it"
+        file: "_pages/azienda.md"
         fields:
           - {
               label: "Immagine di copertina",
@@ -25,118 +24,11 @@ collections:
             }
           - { label: "Title", name: "title", widget: markdown }
           - { label: "Body", name: "body", widget: markdown }
-          - label: "Colonne"
-            name: "colonne"
-            widget: object
-            collapsed: true
-            fields:
-              - label: "Colonna 1"
-                name: "colonna_1"
-                widget: object
-                collapsed: true
-                fields:
-                  - label: "Icona"
-                    name: icona
-                    widget: image
-                  - label: "Titolo"
-                    name: titolo
-                    widget: string
-                  - label: "Body"
-                    name: body
-                    widget: markdown
-
-              - label: "Colonna 2"
-                name: "colonna_2"
-                widget: object
-                collapsed: true
-                fields:
-                  - label: "Icona"
-                    name: icona
-                    widget: image
-                  - label: "Titolo"
-                    name: titolo
-                    widget: string
-                  - label: "Body"
-                    name: body
-                    widget: markdown
-
-          - label: "Costruiamo Progetti"
-            name: "progetti"
-            widget: object
-            collapsed: true
-            fields:
-              - label: "immagine"
-                name: immagine
-                widget: image
-
-              - label: "Content"
-                name: content
-                widget: markdown
-
-              - label: "Colonne"
-                name: colonne
-                widget: object
-                collapsed: true
-                fields:
-                  - label: Colonna 1
-                    name: colonna_1
-                    widget: object
-                    fields:
-                      - label: Titolo
-                        name: titolo
-                        widget: string
-                      - label: Body
-                        name: body
-                        widget: markdown
-
-                  - label: Colonna 2
-                    name: colonna_2
-                    widget: object
-                    fields:
-                      - label: Titolo
-                        name: titolo
-                        widget: string
-                      - label: Body
-                        name: body
-                        widget: markdown
-
-                  - label: Colonna 3
-                    name: colonna_3
-                    widget: object
-                    fields:
-                      - label: Titolo
-                        name: titolo
-                        widget: string
-                      - label: Body
-                        name: body
-                        widget: markdown
-
-          - label: "Etica e valori"
-            name: "etica"
-            widget: object
-            collapsed: true
-            fields:
-              - label: Lista
-                name: lista
-                widget: list
-                fields:
-                  - { label: Titolo, name: titolo, widget: string }
-                  - { label: Contenuto, name: content, widget: markdown }
-
+        
     create: false
     editor:
       preview: false
     fields:
-      - {
-          label: Language,
-          name: language,
-          widget: relation,
-          collection: languages,
-          searchFields: ["language"],
-          valueField: code,
-          displayFields: ["language"],
-          default: "it",
-        }
       - { label: "Title", name: "title", widget: "string", default: "About us" }
       - { label: "Body", name: "body", widget: "markdown" }
 
@@ -146,7 +38,6 @@ collections:
       - label: "Chi siamo"
         name: "chi-siamo-fields"
         file: "_data/chi-siamo.yml"
-        slug: "it"
         fields:
           - { label: "Immagine1", name: "immagine1", widget: image }
           - { label: "Nome", name: "nome", widget: string }
@@ -166,23 +57,12 @@ collections:
     editor:
       preview: false
     fields:
-      - {
-          label: Language,
-          name: language,
-          widget: relation,
-          collection: languages,
-          searchFields: ["language"],
-          valueField: code,
-          displayFields: ["language"],
-          default: "it",
-        }
       - { label: "Title", name: "title", widget: "string", default: "About us" }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - label: "Servizi"
     name: "servizi"
     folder: "_servizi"
-    slug: "{{language}}"
     create: true
     editor:
       preview: false
@@ -206,43 +86,21 @@ collections:
       - label: "Contatti"
         name: "contatti-fields"
         file: "_data/contatti.yml"
-        slug: "it"
         fields:
           - { label: "Titolo", name: "title", widget: string }
     create: false
     editor:
       preview: false
     fields:
-      - {
-          label: Language,
-          name: language,
-          widget: relation,
-          collection: languages,
-          searchFields: ["language"],
-          valueField: code,
-          displayFields: ["language"],
-          default: "it",
-        }
       - { label: "Title", name: "title", widget: "string", default: "About us" }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - label: "Case History"
     name: "case-history"
     folder: "_case-history"
-    slug: "{{language}}"
     create: true
     editor:
       preview: false
     fields:
-      - {
-          label: Language,
-          name: language,
-          widget: relation,
-          collection: languages,
-          searchFields: ["language"],
-          valueField: code,
-          displayFields: ["language"],
-          default: "it",
-        }
       - { label: "Title", name: "title", widget: "string", default: "About us" }
       - { label: "Body", name: "body", widget: "markdown" }
